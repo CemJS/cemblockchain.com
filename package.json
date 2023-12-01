@@ -1,0 +1,26 @@
+{
+  "name": "cemjs-root",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "node node_modules/cemjs-all/esbuild.mjs --runProd",
+    "start": "node node_modules/cemjs-all/esbuild.mjs --runServe",
+    "prod": "node node_modules/cemjs-all/esbuild.mjs --runServe --runProd"
+  },
+  "dependencies": {
+    "cemjs-all": "^1.1.2",
+    "esbuild": "^0.19.1",
+    "http-proxy": "^1.18.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "esbuild-sass-plugin": "^2.12.0",
+    "path": "^0.12.7",
+    "postcss": "^8.4.24"
+  },
+  "main": "index.js",
+  "author": "crypto-emergency.com",
+  "license": "ISC",
+  "description": ""
+}

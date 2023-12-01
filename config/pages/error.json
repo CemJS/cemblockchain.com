@@ -1,0 +1,8 @@
+{
+    "url": "/error",
+    "front": [
+        "header",
+        "error",
+        "footer"
+    ]
+}

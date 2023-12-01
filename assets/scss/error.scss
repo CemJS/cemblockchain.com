@@ -1,0 +1,161 @@
+.error {
+    // background-image: url('../assets/images/error/background_img.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    gap: 25px;
+    padding: 25px;
+    height: 90vh;
+    position: relative;
+
+    &_wrap {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 25px;
+        width: 100%;
+    }
+
+    &_title {
+        font-size: 86px;
+        line-height: 92px;
+        font-weight: 700;
+        text-shadow: 2px 10px 10px #000;
+    }
+
+    &_text {
+        font-size: 60px;
+        line-height: 68px;
+        font-weight: 600;
+        text-shadow: 2px 10px 10px #000;
+        margin-bottom: 50px;
+    }
+
+    &_subtitle {
+        font-size: 22px;
+        line-height: 28px;
+        font-weight: 600;
+        text-shadow: 2px 10px 10px #000;
+    }
+
+    .btn {
+        font-size: 22px;
+    }
+}
+
+@media(max-width: 767px) {
+    .error {
+        background-position: 60% center;
+
+        &_text {
+            font-size: 48px;
+            line-height: 54px;
+            margin-bottom: 40px;
+        }
+
+        &_title {
+            font-size: 72px;
+            line-height: 80px;
+        }
+    }
+}
+
+@media(max-width: 600px) {
+    .error {
+        &_text {
+            margin-bottom: 20px;
+            font-size: 38px;
+        }
+
+        .btn {
+            font-size: 16px;
+        }
+    }
+}
+
+@media(max-width: 485px) {
+    .error {
+        &_text {
+            font-size: 26px;
+            line-height: 32px;
+            margin-bottom: 0;
+        }
+
+        &_title {
+            font-size: 56px;
+            line-height: 62px;
+        }
+    }
+}
+
+@media(max-width: 415px) {
+    .error {
+
+        &_wrap {
+            gap: 10;
+        }
+
+        &_text,
+        &_title,
+        &_subtitle {
+            text-shadow: 2px 6px 7px #000
+        }
+
+        &_text {
+            font-size: 20px;
+            line-height: 26px;
+        }
+
+        &_title {
+            font-size: 46px;
+            line-height: 50px;
+        }
+
+        &_subtitle {
+            font-size: 18px;
+            line-height: 24px;
+        }
+    }
+}
+
+@media(max-width: 340px) {
+    .error {
+
+        &_wrap {
+            gap: 20px;
+        }
+
+        &_text {
+            font-size: 18px;
+            line-height: 24px;
+        }
+
+        &_subtitle {
+            font-size: 16px;
+            line-height: 22px;
+        }
+
+        .title {
+            font-size: 42px;
+            line-height: 48px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+    }
+}
+
+@media(max-width: 300px) {
+    .error {
+        &_subtitle {
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+}
