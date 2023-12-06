@@ -7,7 +7,6 @@ import nft from '@svg/nft.svg'
 import wallet from '@svg/wallet.svg'
 import swap from '@svg/swap.svg'
 
-
 front.listener.finish = () => {
     console.log(Ref.home)
     return
@@ -20,6 +19,7 @@ front.func.test = () => {
 
 front.loader = () => {
     Static.text = "БЛОКЧЕЙН CEM – ПЛАТФОРМА ДЛЯ ПРОЕКТОВ И ПРИЛОЖЕНИЙ.";
+    Static.textEn = "BLOCKCHAIN CEM - A PLATFORM FOR PROJECTS AND APPLICATIONS.";
     return
 }
 

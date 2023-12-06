@@ -1,120 +1,126 @@
 @import '../../assets/scss/utils/fonts.scss';
 @import '../../assets/scss/utils/variables.scss';
 
-footer {
+.footer {
     background-color: #313131;
     color: #FFFFFF;
+
+    &_container {
+        padding-top: 1.25rem;
+        padding-bottom: 0.938rem;
+
+    }
 }
 
-.footer_container {
-    padding-top: 1.25rem;
-    padding-bottom: 0.938rem;
-
-}
 
 .footer_top {
     display: flex;
     margin-bottom: 2.813rem;
-}
 
-.footer_navigation {
-    display: flex;
-    padding-top: 0.625rem;
-    margin-left: 10.313rem;
-}
-
-.footer_navigation div {
-    margin-right: 4.688rem;
-}
-
-.footer_navigation div:last-child {
-    margin-right: 0rem;
-}
-
-.footer_navigation p {
-    font-weight: 700;
-    font-size: 1rem;
-    margin-bottom: 0.813rem;
-}
-
-.footer_navigation a {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1rem;
-    text-decoration: none;
-    color: inherit;
-    margin-bottom: 0.25rem;
-    display: block;
-}
-
-.footer_navigation a:hover {
-    text-decoration: underline;
+    img {
+        width: auto;
+        height: 3.75rem !important;
+    }
 }
 
 .footer_bottom {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    span {
+        font-weight: 400;
+        font-size: 0.875rem;
+    }
 }
 
-.footer_bottom span {
-    font-weight: 400;
-    font-size: 0.875rem;
+.footer_navigation {
+    display: flex;
+    padding-top: 0.625rem;
+    margin-left: 10.313rem;
+
+    a {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1rem;
+        text-decoration: none;
+        color: inherit;
+        margin-bottom: 0.25rem;
+        display: block;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    p {
+        font-weight: 700;
+        font-size: 1rem;
+        margin-bottom: 0.813rem;
+    }
+
+    div {
+        margin-right: 4.688rem;
+
+        &:last-child {
+            margin-right: 0rem;
+        }
+    }
 }
 
 .footer_socials {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 0.938rem;
-}
 
-.footer_socials a {
-    width: 1.625rem;
-    height: 1.625rem;
-    border-radius: 50%;
-    background-color: #FFFFFF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 1s;
-    cursor: pointer;
-    margin-left: 0.313rem;
-}
+    a {
+        width: 1.625rem;
+        height: 1.625rem;
+        border-radius: 50%;
+        background-color: #FFFFFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 1s;
+        cursor: pointer;
+        margin-left: 0.313rem;
 
-.footer_socials a:hover {
-    background-color: #0F0F0F;
-}
+        &:hover {
+            background-color: #0F0F0F;
+        }
 
-.footer_socials a:hover img {
-    filter: invert(1);
+        &:hover img {
+            filter: invert(1);
+        }
+    }
 }
 
 .footer_connect {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
 
-.footer_connect div {
-    border: 0.625rem;
-    background-color: #4A4A4A;
-    padding: 0.313rem 1.25rem;
-    border-radius: 0.313rem;
-    margin-top: 0.938rem;
-    cursor: pointer;
-    transition: 1s;
-    font-weight: 600;
-    text-align: center;
-}
+    div {
+        border: 0.625rem;
+        background-color: #4A4A4A;
+        padding: 0.313rem 0.65rem;
+        border-radius: 0.313rem;
+        margin-top: 0.938rem;
+        cursor: pointer;
+        transition: 1s;
+        font-weight: 600;
+        text-align: center;
 
-.footer_connect div:hover {
-    background-color: #F9F9F9;
-    color: #000;
-}
-
-.footer_connect div img {
-    height: 20px;
-    margin-right: 5px;
+        img {
+            height: 1.25rem !important;
+            margin-right: 0.313rem;
+        }
+        
+        &:hover {
+            background-color: #F9F9F9;
+            color: #000;
+        }
+    }
 }
 
 .footer_flags {
@@ -129,15 +135,6 @@ footer {
     cursor: pointer;
 }
 
-.footer_connect div img {
-    height: 1.25rem !important;
-    margin-right: 0.313rem;
-}
-
-.footer_top img {
-    width: auto;
-    height: 3.75rem !important;
-}
 
 @media(max-width: 1199px) {
     .footer_navigation {

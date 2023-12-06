@@ -1,19 +1,30 @@
-import { Cemjsx, Func, Static, Fn } from "cemjs-all"
+import { Cemjsx, Func, Static, Fn, front } from "cemjs-all"
+import blockHeaderNavigation from "@json/header/blockHeaderNavigation"
+import blockHeaderNavigationEN from "@json/header/en/blockHeaderNavigationEN"
 
 export default function () {
+
+  let lang: any
+
+  if (front.Variable.stateLang) {
+    lang = blockHeaderNavigation
+  } else {
+    lang = blockHeaderNavigationEN
+  }
 
   return (
     <div class="navigation_menu navigation_menu_item">
       <span
-      >О нас
+      >{lang?.about?.title}
         {Static.imgArrow}
       </span>
       <div class="navigation_menu_item_full">
         <div class="navigation_menu_item_full_inner">
-          <a href="https://crypto-emergency.com/en/about/" target="_blank">Команда</a>
-          <a href="/ru/roadmap/" target="_blank">Дорожная карта</a>
-          <a href="/ru/#tokenomics" target="_blank">Токеномика</a>
-          <a href="/ru/terms/" target="_blank">Политика приватности</a>
+          {lang?.about?.content.map((item: any) => {
+            return (
+              <a href={item?.link} target="_blank">{item?.info}</a>
+            )
+          })}
         </div>
       </div>
     </div>

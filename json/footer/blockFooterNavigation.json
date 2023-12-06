@@ -1,0 +1,70 @@
+{
+    "service": {
+        "title": "Сервисы",
+        "content": [
+            {
+                "link": "https://cemwallet.com",
+                "info": "CEM Wallet"
+            },
+            {
+                "link": "https://cemnft.com",
+                "info": "CEM NFT"
+            },
+            {
+                "link": "https://cemswap.com",
+                "info": "CEM Swap"
+            }
+        ]
+    },
+    "devolopers": {
+        "title": "Разработчикам",
+        "content": [
+            {
+                "link": "/ru/api/",
+                "info": "API info"
+            },
+            {
+                "link": "assets/docs/LitePaperRu.pdf",
+                "info": "Lite Paper"
+            },
+            {
+                "link": "https://github.com/CryptoEmergency",
+                "info": "Github"
+            }
+        ]
+    },
+    "about": {
+        "title": "О нас",
+        "content": [
+            {
+                "link": "https://crypto-emergency.com",
+                "info": "Команда"
+            },
+            {
+                "link": "/ru/roadmap/",
+                "info": "Дорожная карта"
+            },
+            {
+                "link": "/ru/#tokenomics",
+                "info": "Токеномика"
+            },
+            {
+                "link": "/ru/terms/",
+                "info": "Политика приватности"
+            }
+        ]
+    },
+    "explorer": {
+        "title": "Обозреватель",
+        "content": [
+            {
+                "link": "https://cemscan.com",
+                "info": "CEM Explorer"
+            },
+            {
+                "link": "https://crypto-emergency.com",
+                "info": "Crypto Emergency"
+            }
+        ]
+    }
+}

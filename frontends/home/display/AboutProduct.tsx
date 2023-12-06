@@ -1,14 +1,28 @@
-import { Cemjsx, Static } from "cemjs-all"
+import { Cemjsx, front, Static } from "cemjs-all"
 import plus from '@images/plus/plus.svg'
-import aboutProduct from '@json/aboutProduct'
-import contacts from '@json/contacts'
+import aboutProduct from '@json/home/aboutProduct'
+import aboutProductEN from '@json/home/en/aboutProductEN'
+import contacts from '@json/home/contacts'
+import contactsEN from '@json/home/en/contactsEN'
 
 export default function () {
+
+  let lang: any
+  let langSecond: any
+
+  if (front.Variable.stateLang) {
+    lang = aboutProduct
+    langSecond = contacts
+  } else {
+    lang = aboutProductEN
+    langSecond = contactsEN
+  }
+
   return (
     <div class="about_product">
       <div class="key_pillars block_wrapper">
-        <h2 class="socialH2">Ключевые моменты нашего продукта</h2>
-        {aboutProduct?.map((item) => {
+        <h2 class="socialH2">{lang?.title}</h2>
+        {lang?.content?.map((item: any) => {
           return (
             <div key={item} class="key_pillars_item">
               <p>{item?.title}</p>
@@ -19,9 +33,9 @@ export default function () {
       </div>
       <div class="contact_us block_wrapper">
         <h2 class="socialH2">
-          Контакты
+          {langSecond?.title}
         </h2>
-        {contacts?.map((item) => {
+        {langSecond?.content?.map((item: any) => {
           return (
             <a target="_blank"
               href={item?.link}

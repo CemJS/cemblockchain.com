@@ -1,0 +1,29 @@
+[
+    {
+        "icon": "/contents/advantages/gas.svg",
+        "info": "One of the lowest fees for gas."
+    },
+    {
+        "icon": "/contents/advantages/time.svg",
+        "info": "Online transaction confirmation — 3 sec."
+    },
+    {
+        "icon": "/contents/advantages/tokens.svg",
+        "info": "Easy and convenient issuance of token smart contracts."
+    },
+    {
+        "icon": "/contents/advantages/nft.svg",
+        "info": "Opportunity to create NFT with further placement on our NFT Market cemnft.com"
+    },
+    {
+        "icon": "/contents/advantages/wallet.svg",
+        "info": "Simple integration with all crypto wallets including own wallet cemwallet.com"
+    },
+    {
+        "icon": "/contents/advantages/swap.svg",
+        "info": "Projects (startups) which issued token smart contracts on our blockchain can use our Swap cemswap.com"
+    },
+    {
+        "info": "Crypto Emergency blockchain may be used in various economy sectors, from virtual assets to large industry or small business."
+    }
+]

@@ -1,35 +1,41 @@
-import { Cemjsx } from "cemjs-all"
+import { Cemjsx, front } from "cemjs-all"
 import logo from '@images/logo/logo.svg'
 import ruflag from '@images/logo/ruflag.svg'
 import enflag from '@images/logo/enflag.svg'
 import metamask from '@svg/metamask.svg'
-import navigationDev from '@json/navigationDev'
-import navigationService from '@json/navigationService'
-import navigationAboutUs from '@json/navigationAboutUs'
-import navigationReviewer from '@json/navigationReviewer'
-import socialsIconRU from '@json/socialsIconRU'
-import socialsIconEN from '@json/socialsIconEN'
+import socialsIconRU from '@json/footer/socialsIconRU'
+import socialsIconEN from '@json/footer/socialsIconEN'
+import blockFooterNavigation from "@json/footer/blockFooterNavigation"
+import blockFooterNavigationEN from "@json/footer/en/blockFooterNavigationEN"
 
 export default function () {
 
+  let lang: any
+
+  if (front.Variable.stateLang) {
+    lang = blockFooterNavigation
+  } else {
+    lang = blockFooterNavigationEN
+  }
+
   return (
-    <footer>
+    <footer class="footer">
       <div class="footer_container block_wrapper">
         <div class="footer_top">
           <div class="footer_connect">
             <img src={logo} />
             <div>
               <img src={metamask} />
-              Добавить сеть
+              {front.Variable.stateLang ? " Добавить сеть " : "Add Network"}
             </div>
           </div>
           <div class="footer_navigation">
 
             <div>
               <p>
-                Разработчикам
+                {lang?.devolopers?.title}
               </p>
-              {navigationDev?.map((item) => {
+              {lang?.devolopers?.content?.map((item: any) => {
                 return (
                   <a class="footer_navigation_a" href={item?.link}>
                     {item?.info}
@@ -40,9 +46,9 @@ export default function () {
 
             <div>
               <p>
-                Сервисы
+                {lang?.service?.title}
               </p>
-              {navigationService?.map((item) => {
+              {lang?.service?.content?.map((item: any) => {
                 return (
                   <a class="footer_navigation_a" href={item?.link}>
                     {item?.info}
@@ -53,9 +59,9 @@ export default function () {
 
             <div>
               <p>
-                О нас
+                {lang?.about?.title}
               </p>
-              {navigationAboutUs?.map((item) => {
+              {lang?.about?.content?.map((item: any) => {
                 return (
                   <a class="footer_navigation_a" href={item?.link}>
                     {item?.info}
@@ -65,11 +71,10 @@ export default function () {
             </div>
 
             <div>
-
               <p>
-                Обозреватель
+                {lang?.explorer?.title}
               </p>
-              {navigationReviewer?.map((item) => {
+              {lang?.explorer?.content?.map((item: any) => {
                 return (
                   <a class="footer_navigation_a" href={item?.link}>
                     {item?.info}

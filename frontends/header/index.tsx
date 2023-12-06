@@ -13,6 +13,7 @@ front.func.test = () => {
 
 front.loader = () => {
     front.Variable.stateModal = false
+    front.Variable.stateLang = "true"
     Static.imgArrow = <img
         class="img-arrow-bottom"
         src={arrow_bottom}>

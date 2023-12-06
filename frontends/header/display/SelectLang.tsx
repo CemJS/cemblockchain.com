@@ -1,4 +1,4 @@
-import { Cemjsx, Func, Static, Fn } from "cemjs-all"
+import { Cemjsx, Func, front, Static, Fn } from "cemjs-all"
 
 export default function () {
 
@@ -6,13 +6,19 @@ export default function () {
     <div class="navigation_menu navigation_menu_item mstart">
       <span>
         {Static.imgIconLang}
-        Язык
+        {front.Variable.stateLang ? "Язык" : "Language"}
         {Static.imgArrow}
       </span>
       <div class="navigation_menu_item_full">
         <div class="navigation_menu_item_full_inner">
-          <a href="" onclick={Fn.link}>English</a>
-          <a href="" onclick={Fn.link}>Russian</a>
+          <a onclick={() => {
+            front.Variable.stateLang = false
+            Fn.initAll()
+          }}>English</a>
+          <a onclick={() => {
+            front.Variable.stateLang = true
+            Fn.initAll()
+          }}>Russian</a>
         </div>
       </div>
     </div>
