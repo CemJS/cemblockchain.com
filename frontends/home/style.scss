@@ -207,6 +207,10 @@
     background-size: contain;
     padding-top: 1.875rem;
     overflow: hidden;
+
+    @media (max-width: 1350px) {
+        background-size: cover;
+    }
 }
 
 .key_pillars {
