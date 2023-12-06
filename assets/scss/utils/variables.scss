@@ -7,3 +7,20 @@ $blue_oyster_cult: #576fe6;
 $lilac_lotion: #ff357f;
 $glass: rgba(150, 150, 150, 0.2);
 $border: rgba(150, 150, 150, 0.5);
+
+.block_wrapper {
+    max-width: 78.5rem;
+    margin: 0 auto;
+    padding-left: 0.938rem;
+    padding-right: 0.938rem;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+img {
+    vertical-align: middle;
+}
+

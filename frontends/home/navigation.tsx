@@ -1,6 +1,14 @@
 import { Cemjsx, Fn } from "cemjs-all"
-import Main from "./display/Main"
+import AdvantagesBlock from "./display/AdvantagesBlock"
+import OurSocialBlock from "./display/OurSocialBlock"
+import AboutProduct from "./display/AboutProduct"
 
 export default function () {
-  return <Main />
+  return (
+    <div>
+      <AdvantagesBlock />
+      <OurSocialBlock />
+      <AboutProduct />
+    </div>
+  )
 }
