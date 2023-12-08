@@ -57,3 +57,8 @@ body {
 p {
     margin: 0;
 }
+
+#app {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}

@@ -22,7 +22,7 @@ export default function () {
         <div class="navigation_menu_item_full_inner">
           {lang?.devolopers?.content.map((item: any) => {
             return (
-              <a href={item?.link} onclick={Fn.link} target="_blank">{item?.info}</a>
+              <a href={item?.link} onclick={Fn.link}>{item?.info}</a>
             )
           })}
           {/* <a href="/ru/api/" target="_blank">API info</a>

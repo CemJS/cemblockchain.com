@@ -20,7 +20,7 @@
         "title": "Разработчикам",
         "content": [
             {
-                "link": "/ru/api/",
+                "link": "/api/",
                 "info": "API info"
             },
             {
@@ -41,7 +41,7 @@
                 "info": "Команда"
             },
             {
-                "link": "/ru/roadmap/",
+                "link": "/roadmap/",
                 "info": "Дорожная карта"
             },
             {
@@ -49,7 +49,7 @@
                 "info": "Токеномика"
             },
             {
-                "link": "/ru/terms/",
+                "link": "/terms/",
                 "info": "Политика приватности"
             }
         ]

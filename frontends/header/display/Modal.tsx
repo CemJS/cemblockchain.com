@@ -46,10 +46,9 @@ export default function () {
             <div class="navigation_item">
               <span>{lang?.devolopers?.title}</span>
               <div class="burger_menu_item">
-                {lang?.devolopers?.content?.map((item) => {
+                {lang?.devolopers?.content?.map((item: any) => {
                   return (
-                    <a href={item?.link}
-                      target="_blank">
+                    <a href={item?.link}>
                       {item?.info}
                     </a>
                   )

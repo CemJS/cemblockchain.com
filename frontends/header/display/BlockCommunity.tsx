@@ -22,7 +22,7 @@ export default function () {
         <div class="navigation_menu_item_full_inner">
           {lang?.community?.content.map((item: any) => {
             return (
-              <a href={item?.link} target="_blank">{item?.info}</a>
+              <a href={item?.link}>{item?.info}</a>
             )
           })}
         </div>

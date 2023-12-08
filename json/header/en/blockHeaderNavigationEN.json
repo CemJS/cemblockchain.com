@@ -62,15 +62,15 @@
                 "info": "Team"
             },
             {
-                "link": "/ru/roadmap/",
+                "link": "/roadmap/",
                 "info": "Roadmap"
             },
             {
-                "link": "/ru/#tokenomics",
+                "link": "/#tokenomics",
                 "info": "Tokenomics"
             },
             {
-                "link": "/ru/terms/",
+                "link": "/terms/",
                 "info": "Private police"
             }
         ]

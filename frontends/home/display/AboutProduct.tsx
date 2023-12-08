@@ -18,6 +18,7 @@ export default function () {
     langSecond = contactsEN
   }
 
+
   return (
     <div class="about_product">
       <div class="key_pillars block_wrapper">
@@ -31,7 +32,7 @@ export default function () {
           )
         })}
       </div>
-      <div class="contact_us block_wrapper">
+      <div class="contact_us block_wrapper" id="contact">
         <h2 class="socialH2">
           {langSecond?.title}
         </h2>

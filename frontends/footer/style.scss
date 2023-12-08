@@ -115,12 +115,16 @@
             height: 1.25rem !important;
             margin-right: 0.313rem;
         }
-        
+
         &:hover {
             background-color: #F9F9F9;
             color: #000;
         }
     }
+}
+
+.paddingR4 {
+    margin-right: 4rem;
 }
 
 .footer_flags {
@@ -160,7 +164,8 @@
     }
 
     .footer_connect div {
-        margin-top: 2.5rem;
+        margin-top: 1.25rem;
+        margin-left: 0.625rem;
     }
 }
 

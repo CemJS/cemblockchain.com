@@ -1,0 +1,52 @@
+{
+    "mainTitle": "Roadmap",
+    "paragraphOne": {
+        "title": "Second quarter of 2022:",
+        "content": [
+            {
+                "text": "Crypto Emergency blockchain launch with release option Smart Contract"
+            },
+            {
+                "text": "Starting Network Status"
+            },
+            {
+                "text": "Starting the CEM explorer"
+            }
+        ]
+    },
+    "paragraphTwo": {
+        "title": "Third quarter of 2022:",
+        "content": [
+            {
+                "text": "Creating a crypto wallet in extension format for browsers, with support for tokens: CEM, ETH, BNB"
+            },
+            {
+                "text": "Creating a crypto wallet in the format of a mobile application"
+            }
+        ]
+    },
+    "paragraphThree": {
+        "title": "Fourth quarter of 2022:",
+        "content": [
+            {
+                "text": "Creating CEM SWAP platform"
+            }
+        ]
+    },
+    "paragraphFour": {
+        "title": "First - Second Quarter 2023:",
+        "content": [
+            {
+                "text": "Launch of an NFT platform on the CEM blockchain"
+            }
+        ]
+    },
+    "paragraphFive": {
+        "title": "Third - Fourth Quarter 2023:",
+        "content": [
+            {
+                "text": "Launch of own exchange"
+            }
+        ]
+    }
+}

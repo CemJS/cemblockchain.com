@@ -5,8 +5,6 @@ import OurSocialBlock from "./OurSocialBlock"
 export default function () {
   return (
     <div>
-      <AdvantagesBlock />
-      <OurSocialBlock />
     </div>
   )
 }

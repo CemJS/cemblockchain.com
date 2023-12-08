@@ -13,7 +13,8 @@ front.func.test = () => {
 
 front.loader = () => {
     front.Variable.stateModal = false
-    front.Variable.stateLang = "true"
+    front.Variable.stateLang = JSON.parse(localStorage.getItem('langState'));
+
     Static.imgArrow = <img
         class="img-arrow-bottom"
         src={arrow_bottom}>
@@ -28,10 +29,9 @@ front.loader = () => {
 
 front.display = () => {
     return (
-        <div>
-            <Navigation />
-        </div>
+        <Navigation />
     )
 }
 
 export { front }
+

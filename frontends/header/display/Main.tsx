@@ -11,31 +11,29 @@ import Modal from "frontends/header/display/Modal";
 export default function () {
 
   return (
-    <header>
-      <div class="block_wrapper img-logo-mr">
-        <a href="/" onclick={Fn.link}>
-          <img src={logo}>
-          </img>
-        </a>
-        <div class="header header_menu">
-          <img
-            class="burger_menu_icon"
-            src={burger_menu}
-            onclick={() => {
-              front.Variable.stateModal = true
-              Fn.initAll()
-            }}
-          />
-          <div class="navigation_menu">
-            <BlockService />
-            <BlockDevolopers />
-            <BlockCommunity />
-            <BlockAbout />
-            <SelectLang />
-          </div>
+    <div class="block_wrapper img-logo-mr">
+      <a href="/" onclick={Fn.link}>
+        <img src={logo}>
+        </img>
+      </a>
+      <div class="header header_menu">
+        <img
+          class="burger_menu_icon"
+          src={burger_menu}
+          onclick={() => {
+            front.Variable.stateModal = true
+            Fn.initAll()
+          }}
+        />
+        <div class="navigation_menu">
+          <BlockService />
+          <BlockDevolopers />
+          <BlockCommunity />
+          <BlockAbout />
+          <SelectLang />
         </div>
-        <Modal />
       </div>
-    </header>
+      <Modal />
+    </div>
   )
 }

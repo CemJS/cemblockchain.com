@@ -25,9 +25,7 @@ front.loader = () => {
 
 front.display = () => {
     return (
-        <div>
-            <Navigation />
-        </div>
+        <Navigation />
     )
 }
 

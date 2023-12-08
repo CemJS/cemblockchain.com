@@ -5,10 +5,10 @@ import AboutProduct from "./display/AboutProduct"
 
 export default function () {
   return (
-    <div>
+    <home>
       <AdvantagesBlock />
       <OurSocialBlock />
       <AboutProduct />
-    </div>
+    </home>
   )
 }

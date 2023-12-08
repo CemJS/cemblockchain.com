@@ -24,3 +24,13 @@ img {
     vertical-align: middle;
 }
 
+.roadmap_point {
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 5px;
+    height: 8px;
+    width: 8px;
+    background: linear-gradient(180deg, #FE0083 0%, #7725C8 100%);
+    position: relative;
+    top: -2px;
+}
