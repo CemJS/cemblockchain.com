@@ -1,0 +1,45 @@
+{
+    "title": "Instructions: How to add Crypto Emergency to your MetaMask wallet",
+    "textButton": "Add network",
+    "paragraph1": "We will tell you how to add Crypto Emergency to MetaMask for use CEM coin.",
+    "paragraph2": "To add a CEM network, you need to unlock the MetaMask wallet and click on the account logo in the upper right corner.",
+    "content": [
+        {
+            "image": "/contents/addNetwork/en/instruction_en_1.png",
+            "text": "Select the 'Settings' item from the menu"
+        },
+        {
+            "image": "/contents/addNetwork/en/instruction_en_2.png",
+            "text": "Below we look for the 'Networks' section and click on it."
+        },
+        {
+            "image": "/contents/addNetwork/en/instruction_en_3.png",
+            "text": "Now you see a list of all added networks, click on the 'Add network' button."
+        },
+        {
+            "image": "/contents/addNetwork/en/instruction_en_4.png",
+            "text": "In the Add New Network form, fill in everything by pattern."
+        },
+        {
+            "image": "/contents/addNetwork/en/instruction_en_5.png"
+        },
+        
+        {
+            "p1": "Network Name: Crypto Emergency",
+            "p2": "URL RPC: ",
+            "p3": "ID цепочки: 193",
+            "p4": "Currency symbol: CEM",
+            "p5": "Block Explorer URL: ",
+            "p6": "You can specify any network name. (Crypto Emergency)",
+            "p7": "After filling in all the fields, click 'Save.'"
+        },
+        {
+            "image": "/contents/addNetwork/instruction_ru_6.png",
+            "text": "Congratulations, you added Crypto Emergency to your MetaMask and can now store CEM coins"
+        },
+        {
+            "image": "/contents/addNetwork/instruction_ru_7.png"
+        }
+
+    ]
+}

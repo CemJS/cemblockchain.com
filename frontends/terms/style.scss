@@ -1,17 +1,15 @@
-@import '../../assets/scss/utils/fonts.scss';
-@import '../../assets/scss/utils/variables.scss';
-
 
 .terms_block {
-    background: url("images/background/third_block_lines.svg");
-    background-repeat: no-repeat;
+    background: url("images/background/term_lines.svg");
+    background-repeat: repeat-y;
     background-position: right -620px top;
-    padding: 1.875rem 0;
+    padding: 1.875rem;
+    padding-top: 0;
 
     h1 {
         margin-bottom: 0;
         font-weight: 800;
-        font-size: 4rem;
+        font-size: clamp(1.8rem, 3.5vw, 4rem);
         max-width: 653px;
         line-height: 100.02%;
     }
@@ -19,7 +17,7 @@
     h2 {
         margin: 0;
         font-weight: 700;
-        font-size: 2.25rem;
+        font-size: clamp(1.5rem, 3.5vw, 2.25rem);
         text-transform: uppercase;
     }
 
@@ -28,13 +26,13 @@
         margin-bottom: 0.5rem;
         font-weight: 500;
         line-height: 1.2;
-        font-size: 1.75rem;
+        font-size: clamp(1.2rem, 3.5vw, 1.75rem);
     }
 }
 
 .terms p {
     font-weight: 400;
-    font-size: 1.188rem;
+    font-size: clamp(1rem, 3.5vw, 1.188rem);
 }
 
 .mt {

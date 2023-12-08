@@ -3,7 +3,7 @@ import Main from "./display/Main"
 
 export default function () {
   return (
-    <network>
+    <network class="main_block ">
       <Main />
     </network>
   )

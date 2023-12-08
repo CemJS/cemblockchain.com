@@ -1,5 +1,6 @@
 import { Cemjsx, front, Func, Static, Fn } from "cemjs-all"
 import Navigation from "./navigation"
+import arrow_bottom from '@svg/arrow_bottom.svg'
 
 
 front.listener.finish = () => {
@@ -11,14 +12,18 @@ front.func.test = () => {
 }
 
 front.loader = () => {
+    Static.imgArrow = <img
+        class="img-arrow-bottom_footer"
+        src={arrow_bottom}>
+    </img>;
     return
 }
 
 front.display = () => {
     return (
-    <footer class="footer">
-        <Navigation />
-    </footer>        
+        <footer class="footer">
+            <Navigation />
+        </footer>
     )
 }
 

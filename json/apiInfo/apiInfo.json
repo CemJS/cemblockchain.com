@@ -1,0 +1,182 @@
+{
+    "title": "API INFO",
+    "content": [
+        {
+            "paragraph": "web3_clientVersion",
+            "span": "Returns the current client version.",
+            "input": {
+                "jsonrpc": "2.0",
+                "method": "web3_clientVersion",
+                "params": [],
+                "id": 67
+            }
+        },
+        {
+            "paragraph": "web3_sha3",
+            "span": "Returns Keccak-256 (not the standardized SHA3-256) of the given data.",
+            "input": {
+                "jsonrpc": "2.0",
+                "method": "web3_sha3",
+                "params": [
+                    "0x68656c6c6f20776f726c64"
+                ],
+                "id": 641
+            }
+        },
+        {
+            "paragraph": "net_version",
+            "span": "Returns the current network id.",
+            "input": {
+                "jsonrpc": "2.0",
+                "method": "net_version",
+                "params": [],
+                "id": 193
+            }
+        },
+        {
+            "paragraph": "net_peerCount",
+            "span": "Returns number of peers currently connected to the client.",
+            "input": {
+                "jsonrpc": "2.0",
+                "method": "net_peerCount",
+                "params": [],
+                "id": 193
+            }
+        },
+        {
+            "paragraph": "net_listening",
+            "span": "Returns true if client is actively listening for network connections.",
+            "input": {
+                "jsonrpc": "2.0",
+                "method": "net_listening",
+                "params": [],
+                "id": 193
+            }
+        },
+        {
+            "paragraph": "eth_syncing",
+            "span": "Returns an object with data about the sync status or false.",
+            "input": {
+                "jsonrpc": "2.0",
+                "method": "eth_syncing",
+                "params": [],
+                "id": 193
+            }
+        },
+        {
+            "paragraph": "eth_coinbase",
+            "span": "Returns the client coinbase address.",
+            "input": {
+                "jsonrpc": "2.0",
+                "method": "eth_coinbase",
+                "params": [],
+                "id": 193
+            }
+        },
+        {
+            "paragraph": "eth_gasPrice",
+            "span": "Returns the current price per gas in wei.",
+            "input": {
+                "jsonrpc": "2.0",
+                "method": "eth_gasPrice",
+                "params": [],
+                "id": 193
+            }
+        },
+        {
+            "paragraph": "eth_accounts",
+            "span": "Returns a list of addresses owned by client.",
+            "input": {
+                "jsonrpc": "2.0",
+                "method": "eth_accounts",
+                "params": [],
+                "id": 193
+            }
+        },
+        {
+            "paragraph": "eth_blockNumber",
+            "span": "Returns the number of most recent block.",
+            "input": {
+                "jsonrpc": "2.0",
+                "method": "eth_blockNumber",
+                "params": [],
+                "id": 193
+            }
+        },
+        {
+            "paragraph": "eth_getBalance",
+            "span": "Returns the balance of the account of given address.",
+            "input": {
+                "jsonrpc": "2.0",
+                "method": "eth_getBalance",
+                "params": [
+                    "0x407d73d8a49eeb85d32cf465507dd71d507100c1",
+                    "latest"
+                ],
+                "id": 193
+            }
+        },
+        {
+            "paragraph": "eth_getTransactionCount",
+            "span": "Returns the number of transactions sent from an address.",
+            "input": {
+                "jsonrpc": "2.0",
+                "method": "eth_getTransactionCount",
+                "params": [
+                    "0xfe4dc9501fbc73d49da08de177b523ab410d6c33",
+                    "latest"
+                ],
+                "id": 193
+            }
+        },
+        {
+            "paragraph": "eth_getBlockTransactionCountByHash",
+            "span": "Returns the number of transactions in a block from a block matching the given block hash.",
+            "input": {
+                "jsonrpc": "2.0",
+                "method": "eth_getBlockTransactionCountByHash",
+                "params": [
+                    "0xb903239f8543d04b5dc1ba6579132b143087c68db1b2168786408fcbce568238"
+                ],
+                "id": 1
+            }
+        },
+        {
+            "paragraph": "eth_getBlockTransactionCountByNumber",
+            "span": "Returns the number of transactions in a block matching the given block number.",
+            "input": {
+                "jsonrpc": "2.0",
+                "method": "eth_getBlockTransactionCountByNumber",
+                "params": [
+                    "0xe8"
+                ],
+                "id": 193
+            }
+        },
+        {
+            "paragraph": "eth_getUncleCountByBlockHash",
+            "span": "Returns the number of uncles in a block from a block matching the given block hash.",
+            "input": {
+                "jsonrpc": "2.0",
+                "method": "eth_getUncleCountByBlockHash",
+                "params": [
+                    "0xb903239f8543d04b5dc1ba6579132b143087c68db1b2168786408fcbce568238"
+                ],
+                "id": 1
+            }
+        },
+        {
+            "paragraph": "eth_getCode",
+            "span": "Returns code at a given address.",
+            "input": {
+                "jsonrpc": "2.0",
+                "method": "eth_getCode",
+                "params": [
+                    "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b",
+                    "0x2"
+                ],
+                "id": 1
+            }
+        }
+    ]
+}

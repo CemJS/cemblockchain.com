@@ -13,7 +13,7 @@ export default function () {
   }
 
   return (
-    <div class="main_block">
+    <div>
       <div class="roadmap block_wrapper">
         <h1>
           {lang?.mainTitle}

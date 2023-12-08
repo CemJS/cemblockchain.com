@@ -1,4 +1,4 @@
-import { Cemjsx, front, Fn } from "cemjs-all"
+import { Cemjsx, front, Fn, Static } from "cemjs-all"
 import logo from '@images/logo/logo.svg'
 import ruflag from '@images/logo/ruflag.svg'
 import enflag from '@images/logo/enflag.svg'
@@ -17,13 +17,15 @@ export default function () {
   } else {
     lang = blockFooterNavigationEN
   }
+  let scrin = window.innerWidth
+  console.log("{window.screen.width", scrin);
 
   return (
 
     <div class="footer_container block_wrapper">
       <div class="footer_top">
         <div class="footer_connect">
-          <img src={logo} />
+          <img class="imgLogo" src={logo} />
           <div>
             <img src={metamask} />
             {front.Variable.stateLang ? " Добавить сеть " : "Add Network"}
@@ -34,20 +36,27 @@ export default function () {
           <div>
             <p>
               {lang?.devolopers?.title}
+              <div class="showIcon">
+                {Static.imgArrow}
+              </div>
             </p>
-            {lang?.devolopers?.content?.map((item: any) => {
-              return (
-                <a class="footer_navigation_a" href={item?.link} onclick={Fn.link}>
-                  {item?.info}
-                </a>
-              )
-            })}
+            <div>
+              {lang?.devolopers?.content?.map((item: any) => {
+                return (
+                  <a class="footer_navigation_a" href={item?.link} onclick={Fn.link}>
+                    {item?.info}
+                  </a>
+                )
+              })}
+            </div>
           </div>
 
           <div>
             <p>
               {lang?.service?.title}
-            </p>
+              <div class="showIcon">
+                {Static.imgArrow}
+              </div>            </p>
             {lang?.service?.content?.map((item: any) => {
               return (
                 <a class="footer_navigation_a" href={item?.link} onclick={Fn.link}>
@@ -60,10 +69,12 @@ export default function () {
           <blockabout class="paddingR4">
             <p>
               {lang?.about?.title}
-            </p>
+              <div class="showIcon">
+                {Static.imgArrow}
+              </div>            </p>
             {lang?.about?.content?.map((item: any) => {
               return (
-                <a class="footer_navigation_a" href={item?.link}>
+                <a class="footer_navigation_a" href={item?.link} onclick={Fn.link}>
                   {item?.info}
                 </a>
               )
@@ -73,7 +84,9 @@ export default function () {
           <div>
             <p>
               {lang?.explorer?.title}
-            </p>
+              <div class="showIcon">
+                {Static.imgArrow}
+              </div>            </p>
             {lang?.explorer?.content?.map((item: any) => {
               return (
                 <a class="footer_navigation_a" href={item?.link}>

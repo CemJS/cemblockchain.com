@@ -1,5 +1,3 @@
-@import '../../assets/scss/utils/fonts.scss';
-@import '../../assets/scss/utils/variables.scss';
 
 .main_block {
     background: url("images/background/advantages_block_lines.svg");
@@ -23,7 +21,7 @@
     }
 
     h3 {
-        font-size: 1.75rem;
+        font-size: clamp(1.2rem, 3.5vw, 1.75rem);
         margin-top: 0;
         margin-bottom: 0.5rem;
         font-weight: 500;
@@ -33,7 +31,7 @@
 
 h1 {
     font-weight: 800;
-    font-size: 4rem;
+    font-size: clamp(1.8rem, 3.5vw, 4rem);
     max-width: 653px;
     line-height: 100.02%;
 }
@@ -43,9 +41,3 @@ h1 {
         background-size: cover;
     }
 }
-
-// @media (min-width: 1200px) {
-//     h1 {
-//         font-size: 2.5rem;
-//     }
-// }
