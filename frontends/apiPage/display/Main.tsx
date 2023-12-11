@@ -2,13 +2,8 @@ import { Cemjsx, Func, Static, Fn, front } from "cemjs-all"
 import apiInfo from "@json/apiInfo/apiInfo"
 
 export default function () {
-  let lang: any;
 
-  if (front.Variable.stateLang) {
-    lang = apiInfo;
-  } else {
-    lang = apiInfo;
-  }
+  const lang = apiInfo
 
   return (
     <div class="api block_wrapper">

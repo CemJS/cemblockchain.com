@@ -14,7 +14,6 @@
     margin-left: 0.313rem;
 }
 
-
 .footer_top {
     display: flex;
     margin-bottom: 2.813rem;
@@ -69,6 +68,43 @@
         }
     }
 }
+
+
+/*******************************************************/
+.blockNavigation {
+    display: flex;
+
+    @media(max-width: 780px) {
+        display: block;
+
+        &_content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+
+            &_block {
+                display: none;
+
+            }
+        }
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/*******************************************************/
+
 
 .footer_socials {
     display: flex;
@@ -125,13 +161,10 @@
     }
 }
 
-.paddingR4 {
-    margin-right: 4rem;
-}
-
 .showIcon {
     display: none;
 }
+
 .footer_flags {
     width: 1.625rem;
     height: 1.625rem;
@@ -144,6 +177,26 @@
     cursor: pointer;
 }
 
+
+.deskFlex {
+    display: flex;
+}
+
+.devolopersBlockMobile {
+    display: none;
+}
+
+.servicesBlockMobile {
+    display: none;
+}
+
+.explorerBlockMobile {
+    display: none;
+}
+
+.aboutBlockMobile {
+    display: none;
+}
 
 @media(max-width: 1199px) {
     .footer_navigation {
@@ -176,13 +229,85 @@
 
 
 @media(max-width: 780px) {
-    .footer_navigation a {
+
+    .servicesBlockDesk {
         display: none;
+    }
+
+    .servicesBlockMobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        p {
+            cursor: pointer;
+            // margin-left: 35%;
+        }
+    }
+
+    .explorerBlockDesk {
+        display: none;
+    }
+
+    .explorerBlockMobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0;
+
+        p {
+            cursor: pointer;
+            // margin-left: 35%;
+        }
+    }
+
+    .aboutBlockDesk {
+        display: none;
+    }
+
+    .aboutBlockMobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        p {
+            cursor: pointer;
+            // margin-left: 35%;
+        }
+    }
+
+    .devolopersBlockDesk {
+        display: none;
+    }
+
+    .devolopersBlockMobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        p {
+            cursor: pointer;
+            // margin-left: 35%;
+        }
+    }
+
+
+    .footerMobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1rem;
     }
 
     .showIcon {
         display: inline-block;
     }
+
     .footer_navigation {
         flex-direction: column;
         justify-content: center;

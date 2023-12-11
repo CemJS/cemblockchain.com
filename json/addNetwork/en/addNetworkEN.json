@@ -27,7 +27,7 @@
         {
             "p1": "Network Name: Crypto Emergency",
             "p2": "URL RPC: ",
-            "p3": "ID цепочки: 193",
+            "p3": "Chain ID: 193",
             "p4": "Currency symbol: CEM",
             "p5": "Block Explorer URL: ",
             "p6": "You can specify any network name. (Crypto Emergency)",

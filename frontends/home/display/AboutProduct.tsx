@@ -1,29 +1,17 @@
 import { Cemjsx, front, Static } from "cemjs-all"
 import plus from '@images/plus/plus.svg'
-import aboutProduct from '@json/home/aboutProduct'
-import aboutProductEN from '@json/home/en/aboutProductEN'
-import contacts from '@json/home/contacts'
-import contactsEN from '@json/home/en/contactsEN'
+import blockHomeContent from '@json/home/blockHomeContent'
+import blockHomeContentEN from '@json/home/en/blockHomeContentEN'
 
 export default function () {
 
-  let lang: any
-  let langSecond: any
-
-  if (front.Variable.stateLang) {
-    lang = aboutProduct
-    langSecond = contacts
-  } else {
-    lang = aboutProductEN
-    langSecond = contactsEN
-  }
-
+  const lang = front.Variable.stateLang === "ru" ? blockHomeContent : blockHomeContentEN
 
   return (
     <div class="about_product">
       <div class="key_pillars block_wrapper">
-        <h2 class="socialH2">{lang?.title}</h2>
-        {lang?.content?.map((item: any) => {
+        <h2 class="socialH2">{lang?.aboutProduct?.title}</h2>
+        {lang?.aboutProduct?.content?.map((item: any) => {
           return (
             <div key={item} class="key_pillars_item">
               <p>{item?.title}</p>
@@ -34,9 +22,9 @@ export default function () {
       </div>
       <div class="contact_us block_wrapper" id="contact">
         <h2 class="socialH2">
-          {langSecond?.title}
+          {lang?.contacts?.title}
         </h2>
-        {langSecond?.content?.map((item: any) => {
+        {lang?.contacts?.content?.map((item: any) => {
           return (
             <a target="_blank"
               href={item?.link}

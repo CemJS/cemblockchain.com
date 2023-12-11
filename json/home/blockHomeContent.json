@@ -1,0 +1,88 @@
+{
+    "title": "НАШИ ПРЕИМУЩЕСТВА",
+    "advantages": {
+        "content": [
+            {
+                "icon": "/contents/advantages/gas.svg",
+                "info": "Одни из самых минимальных комиссий за газ."
+            },
+            {
+                "icon": "/contents/advantages/time.svg",
+                "info": "Подтверждение транзакции в сети – 3 сек."
+            },
+            {
+                "icon": "/contents/advantages/tokens.svg",
+                "info": "Легкий и удобный выпуск смарт-контрактов – токенов."
+            },
+            {
+                "icon": "/contents/advantages/nft.svg",
+                "info": "Возможность создания NFT с дальнейшим размещением на нашем NFT Маркете cemnft.com."
+            },
+            {
+                "icon": "/contents/advantages/wallet.svg",
+                "info": "Простая интеграция со всеми крипто кошельками, включая собственный кошелек cemwallet.com."
+            },
+            {
+                "icon": "/contents/advantages/swap.svg",
+                "info": "Проекты (стартапы), выпустившие смарт-контракты – токены – на нашем блокчейне, смогут воспользоваться нашим Swap cemswap.com."
+            },
+            {
+                "info": "Блокчейн Crypto Emergency может использоваться в разнообразных секторах экономики, начиная с виртуальных активов и заканчивая крупным производством или малым бизнесом."
+            }
+        ]
+    },
+    "ourSocial": {
+        "title": "НАШИ СОЦИАЛЬНЫЕ СЕТИ",
+        "content": [
+            {
+                "icon": "/contents/socials/ourSocial/telegram_gradient.svg",
+                "link": "https://t.me/emergencycrypto"
+            },
+            {
+                "icon": "/contents/socials/ourSocial/github_gradient.svg",
+                "link": "https://github.com/CryptoEmergency"
+            },
+            {
+                "icon": "/contents/socials/ourSocial/twitter_gradient.svg",
+                "link": "https://twitter.com/cryptoemergency"
+            }
+        ]
+    },
+    "aboutProduct": {
+        "title": "КЛЮЧЕВЫЕ МОМЕНТЫ НАШЕГО ПРОДУКТА",
+        "content": [
+            {
+                "title": "Качество",
+                "text": "Мы готовы предоставлять наши услуги с высочайшим технологическим стандартом. Наша платформа и Blockchain CEM - это показатель первоклассного опыта нашей команды."
+            },
+            {
+                "title": "Взаимодействие",
+                "text": "Взаимодействие с будущими клиентами и партнерами на любом языке и на любом уровне. Наши  клиенты играют большую роль в проекте, и мы стараемся сделать их опыт работы с нами, максимально благоприятным."
+            },
+            {
+                "title": "Экономия",
+                "text": "Для будущих проектов–стартапов наша платформа является как и одной из самых удобных в создании своих продуктов, так и имеет минимальные цены на комиссии. Мы разработали бизнес модель так, что это выгодно как для партнера так и для рядового пользователя."
+            }
+        ]
+    },
+    "contacts": {
+        "title": "Контакты",
+        "content": [
+            {
+                "link": "https://t.me/emergencycrypto",
+                "icon": "/contents/contacts/telegram_white.svg",
+                "info": "t.me/cryptoemergencyblockchainEN"
+            },
+            {
+                "link": "https://t.me/cryptoemergencychat",
+                "icon": "/contents/contacts/telegram_white.svg",
+                "info": "t.me/cryptoemergencyblockchainRU"
+            },
+            {
+                "link": "mailto:global@cryptoemergency.com",
+                "icon": "/contents/contacts/email_white.svg",
+                "info": "global@cryptoemergency.com"
+            }
+        ]
+    }
+}

@@ -13,8 +13,7 @@ export default function () {
   return (
     <div class="block_wrapper img-logo-mr">
       <a href="/" onclick={Fn.link}>
-        <img src={logo}>
-        </img>
+        <img src={logo} />
       </a>
       <div class="header header_menu">
         <img
@@ -23,8 +22,7 @@ export default function () {
           onclick={() => {
             front.Variable.stateModal = true
             Fn.initAll()
-          }}
-        />
+          }} />
         <div class="navigation_menu">
           <BlockService />
           <BlockDevolopers />

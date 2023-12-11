@@ -6,13 +6,7 @@ import blockHeaderNavigationEN from "@json/header/en/blockHeaderNavigationEN"
 
 export default function () {
 
-  let lang: any
-
-  if (front.Variable.stateLang) {
-    lang = blockHeaderNavigation
-  } else {
-    lang = blockHeaderNavigationEN
-  }
+  const lang = front.Variable.stateLang === "ru" ? blockHeaderNavigation : blockHeaderNavigationEN
 
   return (
     <div
@@ -47,11 +41,15 @@ export default function () {
               <span>{lang?.devolopers?.title}</span>
               <div class="burger_menu_item">
                 {lang?.devolopers?.content?.map((item: any) => {
-                  return (
-                    <a href={item?.link}>
-                      {item?.info}
-                    </a>
-                  )
+                  if (item?.info === 'Lite Paper') {
+                    return (
+                      <a href={item?.link} target="_blank">{item?.info}</a>
+                    )
+                  } else {
+                    return (
+                      <a href={item?.link}>{item?.info}</a>
+                    );
+                  }
                 })}
               </div>
             </div>
@@ -74,12 +72,22 @@ export default function () {
               <span>{lang?.community?.title}</span>
               <div class="burger_menu_item">
                 {lang?.community?.content?.map((item: any) => {
-                  return (
-                    <a href={item?.link}
-                      target="_blank">
-                      {item?.info}
-                    </a>
-                  )
+                  if (item?.link === '/#contact') {
+                    return (
+                      <a href={item?.link}
+                        onclick={() => {
+                          document.querySelector('#contact').scrollIntoView({
+                            behavior: 'smooth'
+                          })
+                        }}
+                      >{item?.info}</a>
+                    );
+                  } else {
+                    return (
+                      <a href={item?.link}
+                        onclick={Fn.link}>{item?.info}</a>
+                    )
+                  }
                 })}
               </div>
             </div>
@@ -102,15 +110,17 @@ export default function () {
             <div class="navigation_item">
               <span>
                 <img src={language_icon} />
-                {front.Variable.stateLang ? "Язык" : "Language"}
+                {front.Variable.stateLang == "ru" ? "Язык" : "Language"}
               </span>
               <div class="burger_menu_item">
                 <a onclick={() => {
-                  front.Variable.stateLang = false
+                  front.Variable.stateLang = "en"
+                  localStorage.setItem('langState', front.Variable.stateLang)
                   Fn.initAll()
                 }}>English</a>
                 <a onclick={() => {
-                  front.Variable.stateLang = true
+                  front.Variable.stateLang = "ru"
+                  localStorage.setItem('langState', front.Variable.stateLang)
                   Fn.initAll()
                 }}>Russian</a>
               </div>

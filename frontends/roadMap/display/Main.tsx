@@ -4,13 +4,7 @@ import roadMapEN from "@json/roadMap/en//roadMapEN"
 
 export default function () {
 
-  let lang: any
-
-  if (front.Variable.stateLang) {
-    lang = roadMap
-  } else {
-    lang = roadMapEN
-  }
+  const lang = front.Variable.stateLang === "ru" ? roadMap : roadMapEN
 
   return (
     <div>

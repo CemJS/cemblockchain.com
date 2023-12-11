@@ -12,6 +12,10 @@ front.func.test = () => {
 }
 
 front.loader = () => {
+    Static.servicesState = false
+    Static.devolopersState = false
+    Static.aboutState = false
+    Static.explorerState = false
     Static.imgArrow = <img
         class="img-arrow-bottom_footer"
         src={arrow_bottom}>

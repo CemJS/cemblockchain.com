@@ -4,18 +4,12 @@ import blockHeaderNavigationEN from "@json/header/en/blockHeaderNavigationEN"
 
 export default function () {
 
-  let lang: any
-
-  if (front.Variable.stateLang) {
-    lang = blockHeaderNavigation
-  } else {
-    lang = blockHeaderNavigationEN
-  }
+  const lang = front.Variable.stateLang === "ru" ? blockHeaderNavigation : blockHeaderNavigationEN
 
   return (
     <div class="navigation_menu navigation_menu_item">
-      <span
-      >{lang?.about?.title}
+      <span>
+        {lang?.about?.title}
         {Static.imgArrow}
       </span>
       <div class="navigation_menu_item_full">

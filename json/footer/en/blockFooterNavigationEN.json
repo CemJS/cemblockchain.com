@@ -1,6 +1,6 @@
 {
-    "service": {
-        "title": "Service",
+    "services": {
+        "title": "Services",
         "content": [
             {
                 "link": "https://cemwallet.com",

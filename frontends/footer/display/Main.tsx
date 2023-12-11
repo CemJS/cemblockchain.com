@@ -7,18 +7,30 @@ import socialsIconRU from '@json/footer/socialsIconRU'
 import socialsIconEN from '@json/footer/socialsIconEN'
 import blockFooterNavigation from "@json/footer/blockFooterNavigation"
 import blockFooterNavigationEN from "@json/footer/en/blockFooterNavigationEN"
+import BlockNavigationMobail from "./BlockNavigationMobail"
+import BlockNavigationDesktop from "./BlockNavigationDesktop"
+import BlockNavigationDesktopTesting from "./BlockNavigationDesktopTesting"
+
+const showServices = () => {
+  Static.servicesState = !Static.servicesState
+  Fn.init()
+}
+const showDevolopers = () => {
+  Static.devolopersState = !Static.devolopersState
+  Fn.init()
+}
+const showAbout = () => {
+  Static.aboutState = !Static.aboutState
+  Fn.init()
+}
+const showExplorer = () => {
+  Static.explorerState = !Static.explorerState
+  Fn.init()
+}
 
 export default function () {
 
-  let lang: any
-
-  if (front.Variable.stateLang) {
-    lang = blockFooterNavigation
-  } else {
-    lang = blockFooterNavigationEN
-  }
-  let scrin = window.innerWidth
-  console.log("{window.screen.width", scrin);
+  const lang = front.Variable.stateLang === "ru" ? blockFooterNavigation : blockFooterNavigationEN
 
   return (
 
@@ -28,74 +40,13 @@ export default function () {
           <img class="imgLogo" src={logo} />
           <div>
             <img src={metamask} />
-            {front.Variable.stateLang ? " Добавить сеть " : "Add Network"}
+            {front.Variable.stateLang == "ru" ? " Добавить сеть " : "Add Network"}
           </div>
         </div>
         <div class="footer_navigation">
-
-          <div>
-            <p>
-              {lang?.devolopers?.title}
-              <div class="showIcon">
-                {Static.imgArrow}
-              </div>
-            </p>
-            <div>
-              {lang?.devolopers?.content?.map((item: any) => {
-                return (
-                  <a class="footer_navigation_a" href={item?.link} onclick={Fn.link}>
-                    {item?.info}
-                  </a>
-                )
-              })}
-            </div>
-          </div>
-
-          <div>
-            <p>
-              {lang?.service?.title}
-              <div class="showIcon">
-                {Static.imgArrow}
-              </div>            </p>
-            {lang?.service?.content?.map((item: any) => {
-              return (
-                <a class="footer_navigation_a" href={item?.link} onclick={Fn.link}>
-                  {item?.info}
-                </a>
-              )
-            })}
-          </div>
-
-          <blockabout class="paddingR4">
-            <p>
-              {lang?.about?.title}
-              <div class="showIcon">
-                {Static.imgArrow}
-              </div>            </p>
-            {lang?.about?.content?.map((item: any) => {
-              return (
-                <a class="footer_navigation_a" href={item?.link} onclick={Fn.link}>
-                  {item?.info}
-                </a>
-              )
-            })}
-          </blockabout>
-
-          <div>
-            <p>
-              {lang?.explorer?.title}
-              <div class="showIcon">
-                {Static.imgArrow}
-              </div>            </p>
-            {lang?.explorer?.content?.map((item: any) => {
-              return (
-                <a class="footer_navigation_a" href={item?.link}>
-                  {item?.info}
-                </a>
-              )
-            })}
-          </div>
-
+          {/* <BlockNavigationDesktopTesting/> */}
+          <BlockNavigationDesktop />
+          <BlockNavigationMobail />
         </div>
       </div>
 

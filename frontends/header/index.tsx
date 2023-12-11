@@ -13,7 +13,11 @@ front.func.test = () => {
 
 front.loader = () => {
     front.Variable.stateModal = false
-    front.Variable.stateLang = JSON.parse(localStorage.getItem('langState'));
+    if (localStorage.getItem('langState') == null) {
+        front.Variable.stateLang = "ru"
+    } else {
+        front.Variable.stateLang = localStorage.getItem('langState')
+    }
 
     Static.imgArrow = <img
         class="img-arrow-bottom"

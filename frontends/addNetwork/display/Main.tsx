@@ -5,13 +5,7 @@ import metamask from '@svg/metamask.svg'
 
 export default function () {
 
-  let lang: any
-
-  if (front.Variable.stateLang) {
-    lang = addNetwork
-  } else {
-    lang = addNetworkEN
-  }
+  const lang = front.Variable.stateLang === "ru" ? addNetwork : addNetworkEN
 
   return (
     <div class="add_network block_wrapper">
