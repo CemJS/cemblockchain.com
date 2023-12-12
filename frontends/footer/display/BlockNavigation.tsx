@@ -28,7 +28,7 @@ export default function () {
       <div class="mobileFlex">
         <p onclick={showDevolopers}>
           {lang?.devolopers?.title}
-          <div class="showIcon">
+          <div class={Static.devolopersState ? "showIcon img-arrow-up_footer" : "showIcon"}>
             {Static.imgArrow}
           </div>
         </p>
@@ -50,7 +50,7 @@ export default function () {
       <div class="mobileFlex">
         <p onclick={showServices}>
           {lang?.services?.title}
-          <div class="showIcon">
+          <div class={Static.servicesState ? "showIcon img-arrow-up_footer" : "showIcon"}>
             {Static.imgArrow}
           </div>
         </p>
@@ -68,7 +68,7 @@ export default function () {
       <div class="mobileFlex">
         <p onclick={showAbout}>
           {lang?.about?.title}
-          <div class="showIcon">
+          <div class={Static.aboutState ? "showIcon img-arrow-up_footer" : "showIcon"}>
             {Static.imgArrow}
           </div>
         </p>
@@ -86,7 +86,7 @@ export default function () {
       <div class="mobileFlex">
         <p onclick={showExplorer}>
           {lang?.explorer?.title}
-          <div class="showIcon">
+          <div class={Static.explorerState ? "showIcon img-arrow-up_footer" : "showIcon"}>
             {Static.imgArrow}
           </div>
         </p>
@@ -100,7 +100,6 @@ export default function () {
           })}
         </div>
       </div>
-
     </div>
 
   )

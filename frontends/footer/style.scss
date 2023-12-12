@@ -14,6 +14,12 @@
     margin-left: 0.313rem;
 }
 
+.img-arrow-up_footer {
+    transition: 0.35s;
+    transform: rotate(180deg);
+    margin-left: 0.313rem;
+}
+
 .footer_top {
     display: flex;
     margin-bottom: 2.813rem;
@@ -21,6 +27,10 @@
     .imgLogo {
         width: auto;
         height: 3.75rem !important;
+    }
+
+    @media(max-width: 780px) {
+        margin-bottom: 0.5rem;
     }
 }
 
@@ -208,7 +218,7 @@
         justify-content: center;
         align-items: center;
     }
-    
+
     .showIcon {
         display: inline-block;
     }

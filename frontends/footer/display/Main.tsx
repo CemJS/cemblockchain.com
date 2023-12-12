@@ -25,9 +25,7 @@ export default function () {
           </div>
         </div>
         <div class="footer_navigation">
-          <BlockNavigation/>
-          {/* <BlockNavigationDesktop /> */}
-          {/* <BlockNavigationMobail /> */}
+          <BlockNavigation />
         </div>
       </div>
 
