@@ -73,6 +73,7 @@
 /*******************************************************/
 .blockNavigation {
     display: flex;
+    cursor: pointer;
 
     @media(max-width: 780px) {
         display: block;
@@ -92,15 +93,6 @@
 
     }
 }
-
-
-
-
-
-
-
-
-
 
 
 /*******************************************************/
@@ -178,26 +170,6 @@
 }
 
 
-.deskFlex {
-    display: flex;
-}
-
-.devolopersBlockMobile {
-    display: none;
-}
-
-.servicesBlockMobile {
-    display: none;
-}
-
-.explorerBlockMobile {
-    display: none;
-}
-
-.aboutBlockMobile {
-    display: none;
-}
-
 @media(max-width: 1199px) {
     .footer_navigation {
         margin-left: 4.375rem;
@@ -230,80 +202,13 @@
 
 @media(max-width: 780px) {
 
-    .servicesBlockDesk {
-        display: none;
-    }
-
-    .servicesBlockMobile {
+    .mobileFlex {
         display: flex;
         flex-direction: column;
-        align-items: center;
         justify-content: center;
-
-        p {
-            cursor: pointer;
-            // margin-left: 35%;
-        }
-    }
-
-    .explorerBlockDesk {
-        display: none;
-    }
-
-    .explorerBlockMobile {
-        display: flex;
-        flex-direction: column;
         align-items: center;
-        justify-content: center;
-        margin-bottom: 0;
-
-        p {
-            cursor: pointer;
-            // margin-left: 35%;
-        }
     }
-
-    .aboutBlockDesk {
-        display: none;
-    }
-
-    .aboutBlockMobile {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-
-        p {
-            cursor: pointer;
-            // margin-left: 35%;
-        }
-    }
-
-    .devolopersBlockDesk {
-        display: none;
-    }
-
-    .devolopersBlockMobile {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-
-        p {
-            cursor: pointer;
-            // margin-left: 35%;
-        }
-    }
-
-
-    .footerMobile {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 1rem;
-    }
-
+    
     .showIcon {
         display: inline-block;
     }

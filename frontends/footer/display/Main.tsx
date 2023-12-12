@@ -7,26 +7,7 @@ import socialsIconRU from '@json/footer/socialsIconRU'
 import socialsIconEN from '@json/footer/socialsIconEN'
 import blockFooterNavigation from "@json/footer/blockFooterNavigation"
 import blockFooterNavigationEN from "@json/footer/en/blockFooterNavigationEN"
-import BlockNavigationMobail from "./BlockNavigationMobail"
-import BlockNavigationDesktop from "./BlockNavigationDesktop"
-import BlockNavigationDesktopTesting from "./BlockNavigationDesktopTesting"
-
-const showServices = () => {
-  Static.servicesState = !Static.servicesState
-  Fn.init()
-}
-const showDevolopers = () => {
-  Static.devolopersState = !Static.devolopersState
-  Fn.init()
-}
-const showAbout = () => {
-  Static.aboutState = !Static.aboutState
-  Fn.init()
-}
-const showExplorer = () => {
-  Static.explorerState = !Static.explorerState
-  Fn.init()
-}
+import BlockNavigation from "./BlockNavigation"
 
 export default function () {
 
@@ -44,9 +25,9 @@ export default function () {
           </div>
         </div>
         <div class="footer_navigation">
-          {/* <BlockNavigationDesktopTesting/> */}
-          <BlockNavigationDesktop />
-          <BlockNavigationMobail />
+          <BlockNavigation/>
+          {/* <BlockNavigationDesktop /> */}
+          {/* <BlockNavigationMobail /> */}
         </div>
       </div>
 
