@@ -24,7 +24,7 @@
                 "info": "API info"
             },
             {
-                "link": "/assets/docs/LitePaperEn.pdf",
+                "link": "/contents/pdfFiles/LitePaperRu.pdf",
                 "info": "Lite Paper"
             },
             {
@@ -41,15 +41,15 @@
                 "info": "Team"
             },
             {
-                "link": "/ru/roadmap/",
+                "link": "/roadmap/",
                 "info": "Roadmap"
             },
             {
-                "link": "/ru/#tokenomics",
+                "link": "/#tokenomics",
                 "info": "Tokenomics"
             },
             {
-                "link": "/ru/terms/",
+                "link": "/terms/",
                 "info": "Private police"
             }
         ]

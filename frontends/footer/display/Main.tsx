@@ -55,7 +55,7 @@ export default function () {
             )
           })}
         </div>
-        <span>Crypto Emergency. All rights reserved © 2022</span>
+        <span>Crypto Emergency. All rights reserved © 2023</span>
       </div>
     </div>
 

@@ -24,7 +24,7 @@
                 "info": "API info"
             },
             {
-                "link": "assets/docs/LitePaperRu.pdf",
+                "link": "/contents/pdfFiles/LitePaperRu.pdf",
                 "info": "Lite Paper"
             },
             {
@@ -45,7 +45,7 @@
                 "info": "Дорожная карта"
             },
             {
-                "link": "/ru/#tokenomics",
+                "link": "#tokenomics",
                 "info": "Токеномика"
             },
             {

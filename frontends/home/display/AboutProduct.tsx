@@ -6,6 +6,7 @@ import blockHomeContentEN from '@json/home/en/blockHomeContentEN'
 export default function () {
 
   const lang = front.Variable.stateLang === "ru" ? blockHomeContent : blockHomeContentEN
+console.log("front.Variable.stateLang", front.Variable.stateLang);
 
   return (
     <div class="about_product">

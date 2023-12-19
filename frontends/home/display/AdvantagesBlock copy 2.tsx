@@ -2,41 +2,34 @@ import { Cemjsx, Static, Fn, front } from "cemjs-all"
 import blockHomeContent from '@json/home/blockHomeContent'
 import blockHomeContentEN from '@json/home/en/blockHomeContentEN'
 import * as THREE from 'three';
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js'
-
-    const scene = new THREE.Scene();
-
-    const camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 100);
-    camera.position.set(0, 5, 15);
-
-    const renderer = new THREE.WebGLRenderer({alpha: true, antialias: true});
-    renderer.setClearColor(0x000000, 0);
-    renderer.setSize(1920 , 1080);
-    document.body.appendChild(renderer.domElement);
+import {GLTFLoader} from 'THREE/examples/jsm/loaders/GLTFLoader.js'
 
 
-    const pLight = new THREE.PointLight(0xFFFFFF, 15);
-    pLight.position.set(0,5,0)
-    scene.add(pLight);
+const scene = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
 
-    const phelper = new THREE.PointLightHelper(pLight);
-    scene.add(phelper);
+const renderer = new THREE.WebGLRenderer();
+renderer.setSize( window.innerWidth, window.innerHeight );
+document.body.appendChild( renderer.domElement );
 
+const geometry = new THREE.BoxGeometry( 1, 1, 1 );
+const material = new THREE.MeshBasicMaterial( { color: 0xf0ff00 } );
+const cube = new THREE.Mesh( geometry, material );
+scene.add( cube );
+console.log("scene", scene);
 
-    const loader = new GLTFLoader();
-    let obj = null;
+camera.position.z = 5;
 
-    loader.load("assets/3d/coin.gltf", function(gltf) {
-        obj = gltf.scene;
-        scene.add(gltf.scene);
-    });
+function animate() {
+	requestAnimationFrame( animate );
 
-    function animate(){
-        requestAnimationFrame(animate)
-        obj.rotation.y += 0.005;  // speed
-        renderer.render(scene, camera)
-    }
-    animate();
+	cube.rotation.x += 0.01;
+	cube.rotation.y += 0.01;
+
+	renderer.render( scene, camera );
+}
+
+animate();
 
 export default function () {
 
@@ -47,7 +40,6 @@ export default function () {
       <div class="preview_block block_wrapper">
         <div class="preview_block_main">
           <h1>{front.Variable.stateLang == "ru" ? Static?.text : Static?.textEn}</h1>
-         <canvas id="threejs-canvas" class="3d_coin"></canvas>
         </div>
         <p>
           <b>Crypto Emergency </b>
