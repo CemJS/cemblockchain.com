@@ -1,0 +1,38 @@
+{
+	"Consolelog": {
+		"scope": "javascript,typescript,typescriptreact",
+		"prefix": "_log",
+		"body": [
+			"console.log('=$RANDOM_HEX=',${1:Переменная})"
+		],
+		"description": "Лог с рандомным указателем"
+	},
+	"Consoleerror": {
+		"scope": "javascript,typescript,typescriptreact",
+		"prefix": "_err",
+		"body": [
+			"console.error('=$RANDOM_HEX=',${1:Переменная})"
+		],
+		"description": "Лог ошибки с рандомным указателем"
+	},
+	"AsyncFuncSelf": {
+		"scope": "javascript,typescript,typescriptreact",
+		"prefix": "_async",
+		"body": [
+			"(async () => {",
+			"${1}",
+			"})()"
+		],
+		"description": "Асинхронная функция с самовызовом"
+	},
+	"Constfunction": {
+		"scope": "javascript,typescript,typescriptreact",
+		"prefix": "_func",
+		"body": [
+			"const ${1:Переменная} = function(){",
+			"${2}",
+			"}"
+		],
+		"description": "Объявлении функции"
+	}
+}
