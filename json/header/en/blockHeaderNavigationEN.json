@@ -1,0 +1,78 @@
+{
+    "service": {
+        "title": "Services",
+        "content": [
+            {
+                "link": "https://crypto-emergency.com",
+                "info": "Crypto Emergency"
+            },
+            {
+                "link": "https://cemscan.com",
+                "info": "CEM Explorer"
+            },
+            {
+                "link": "https://cemwallet.com",
+                "info": "CEM Wallet"
+            },
+            {
+                "link": "https://cemnft.com",
+                "info": "CEM NFT"
+            },
+            {
+                "link": "https://cemswap.com",
+                "info": "CEM Swap"
+            }
+        ]
+    },
+    "devolopers": {
+        "title": "Devolopers",
+        "content": [
+            {
+                "link": "/api/",
+                "info": "API info"
+            },
+            {
+                "link": "/contents/pdfFiles/LitePaperRu.pdf",
+                "info": "Lite Paper"
+            }
+        ]
+    },
+    "community": {
+        "title": "Community",
+        "content": [
+            {
+                "link": "https://github.com/CryptoEmergency",
+                "info": "Github"
+            },
+            {
+                "link": "/#contact",
+                "info": "Contact"
+            },
+            {
+                "link": "/add-network/",
+                "info": "Add Network Instruction"
+            }
+        ]
+    },
+    "about": {
+        "title": "About",
+        "content": [
+            {
+                "link": "https://crypto-emergency.com/en/about/",
+                "info": "Team"
+            },
+            {
+                "link": "/roadmap/",
+                "info": "Roadmap"
+            },
+            {
+                "link": "/#tokenomics",
+                "info": "Tokenomics"
+            },
+            {
+                "link": "/terms/",
+                "info": "Private police"
+            }
+        ]
+    }
+}

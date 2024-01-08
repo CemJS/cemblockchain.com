@@ -1,0 +1,44 @@
+
+.terms_block {
+    background: url("images/background/term_lines.svg");
+    background-repeat: repeat-y;
+    background-position: right -620px top;
+    padding: 1.875rem;
+    padding-top: 0;
+
+    h1 {
+        margin-bottom: 0;
+        font-weight: 800;
+        font-size: clamp(1.8rem, 3.5vw, 4rem);
+        max-width: 653px;
+        line-height: 100.02%;
+    }
+
+    h2 {
+        margin: 0;
+        font-weight: 700;
+        font-size: clamp(1.5rem, 3.5vw, 2.25rem);
+        text-transform: uppercase;
+    }
+
+    h3 {
+        margin-top: 0;
+        margin-bottom: 0.5rem;
+        font-weight: 500;
+        line-height: 1.2;
+        font-size: clamp(1.2rem, 3.5vw, 1.75rem);
+    }
+}
+
+.terms p {
+    font-weight: 400;
+    font-size: clamp(1rem, 3.5vw, 1.188rem);
+}
+
+.mt {
+    margin-top: 1rem;
+}
+
+.mb {
+    margin-bottom: 1rem;
+}

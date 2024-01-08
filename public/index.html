@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>CemJS FrameWork (Root)</title>
+    <title>CryptoEmergency Blockchain</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="/assets/css/preloader.css">
     <link rel="stylesheet" href="/assets/css/root.css">
@@ -12,23 +12,35 @@
 </head>
 
 <body>
-    <div id="app"></div>
+    <div id="app">
+    </div>
     <div id="preloader" class="preloader_wrap">
         <div class="preloader">
-            <div class="preloader_spinner">
-                <div class="preloader_spinner_ring"></div>
-                <div class="preloader_spinner_ring"></div>
-                <div class="preloader_spinner_ring"></div>
-                <div class="preloader_percent" ref="percent">0%</div>
+            <div class="page_loader">
+                <div class="page_loader_inner">
+                    <img src="/contents/preloader/loading.gif">
+                    <p>Connecting to Blockchain...</p>
+                </div>
             </div>
-            <div class="preloader_progressBar">
-                <div id="progress" class="preloader_progress"></div>
+            <div class="preloader_percent" ref="percent">
             </div>
         </div>
     </div>
 </body>
+
 <script>
     import("/assets/js/root.js").then(start => start.default())
 </script>
+<script type="importmap">
+    {
+      "imports": {
+        "three": "https://unpkg.com/three@v0.153.0/build/three.module.js",
+        "three/addons/": "https://unpkg.com/three@v0.153.0/examples/jsm/"
+      }
+    }
+  </script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.121.1/examples/jsm/controls/OrbitControls.js"></script>
+<script src="https://unpkg.com/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script> -->
 
 </html>

@@ -1,39 +1,37 @@
-import { Cemjsx, Func, Static, Fn } from "cemjs-all"
-import logo from '@images/logo/logo.jpg'
-
+import { Cemjsx, Func, Static, Fn, front } from "cemjs-all"
+import logo from '@images/logo/logo.svg'
+import burger_menu from '@images/logo/burger_menu.svg'
+import BlockService from "./BlockService";
+import BlockDevolopers from "./BlockDevolopers";
+import BlockCommunity from "./BlockCommunity";
+import BlockAbout from "./BlockAbout";
+import SelectLang from "./SelectLang";
+import Modal from "frontends/header/display/Modal";
 
 export default function () {
-  return (
-    <header class="header header_container">
-      <div class="header_inner">
-        <div class="header_logo">
-          <a href="/" onclick={Fn.link}>
-            <img
-              class="header_logo-img"
-              src={logo}
-            ></img>
-          </a>
-        </div>
-        <nav>
-          <ul class="header_menu">
-            <li
-              class={["header_menu_item", Static.page == "cemjs" ? "header_menu_item-active" : null]}
 
-            ><a href="/about/" onclick={Fn.link}>Cem JS</a>
-            </li>
-            <li
-              class={["header_menu_item", Static.page == "examples" ? "header_menu_item-active" : null]}
-            ><a href="https://ya.ru" onclick={Fn.link}>Examples</a></li>
-            <li
-              class={["header_menu_item", Static.page == "contacts" ? "header_menu_item-active" : null]}
-              onclick={() => {
-                Static.page = "contacts"
-                Fn.init()
-              }}
-            >Contacts</li>
-          </ul>
-        </nav>
+  return (
+    <div class="block_wrapper img-logo-mr">
+      <a href="/" onclick={Fn.link}>
+        <img src={logo} />
+      </a>
+      <div class="header header_menu">
+        <img
+          class="burger_menu_icon"
+          src={burger_menu}
+          onclick={() => {
+            front.Variable.stateModal = true
+            Fn.initAll()
+          }} />
+        <div class="navigation_menu">
+          <BlockService />
+          <BlockDevolopers />
+          <BlockCommunity />
+          <BlockAbout />
+          <SelectLang />
+        </div>
       </div>
-    </header>
+      <Modal />
+    </div>
   )
 }

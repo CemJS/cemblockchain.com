@@ -1,0 +1,45 @@
+{
+    "title": "Инструкция: как добавить Crypto Emergency в кошелек MetaMask",
+    "textButton": "Добавить сеть",
+    "paragraph1": "Мы расскажем Вам как добавить в MetaMask Crypto Emergency, чтобы получить возможность использования монеты CEM.",
+    "paragraph2": "Чтобы добавить сеть CEM нужно разблокировать кошелек MetaMask и кликнуть на логотип аккаунта в правом верхнем углу.",
+    "content": [
+        {
+            "image": "/contents/addNetwork/instruction_ru_1.png",
+            "text": "Выбираем в меню пункт «Настройка»"
+        },
+        {
+            "image": "/contents/addNetwork/instruction_ru_2.png",
+            "text": "Внизу ищем раздел «Сети» и кликаем на него."
+        },
+        {
+            "image": "/contents/addNetwork/instruction_ru_3.png",
+            "text": "Теперь Вы видите список всех добавленных сетей, кликаем на кнопку «Добавить сеть»."
+        },
+        {
+            "image": "/contents/addNetwork/instruction_ru_4.png",
+            "text": "В форме добавления новой сети заполняйте все по образцу."
+        },
+        {
+            "image": "/contents/addNetwork/instruction_ru_5.png"
+        },
+        
+        {
+            "p1": "Имя сети: Crypto Emergency",
+            "p2": "Новый URL адрес RPC: ",
+            "p3": "ID цепочки: 193",
+            "p4": "Символ валюты: CEM",
+            "p5": "URL-адрес проводника блоков: ",
+            "p6": "Имя сети можете задать любое. (Crypto Emergency)",
+            "p7": "После заполнения всех полей, нажимаем «Сохранить»."
+        },
+        {
+            "image": "/contents/addNetwork/instruction_ru_6.png",
+            "text": "Поздравляю, Вы добавили Crypto Emergency в ваш MetaMask и теперь в нем можно хранить монеты CEM"
+        },
+        {
+            "image": "/contents/addNetwork/instruction_ru_7.png"
+        }
+
+    ]
+}

@@ -1,0 +1,88 @@
+{
+    "title": "OUR ADVANTAGES",
+    "advantages": {
+        "content": [
+            {
+                "icon": "/contents/advantages/gas.svg",
+                "info": "One of the lowest fees for gas."
+            },
+            {
+                "icon": "/contents/advantages/time.svg",
+                "info": "Online transaction confirmation — 3 sec."
+            },
+            {
+                "icon": "/contents/advantages/tokens.svg",
+                "info": "Easy and convenient issuance of token smart contracts."
+            },
+            {
+                "icon": "/contents/advantages/nft.svg",
+                "info": "Opportunity to create NFT with further placement on our NFT Market cemnft.com"
+            },
+            {
+                "icon": "/contents/advantages/wallet.svg",
+                "info": "Simple integration with all crypto wallets including own wallet cemwallet.com"
+            },
+            {
+                "icon": "/contents/advantages/swap.svg",
+                "info": "Projects (startups) which issued token smart contracts on our blockchain can use our Swap cemswap.com"
+            },
+            {
+                "info": "Crypto Emergency blockchain may be used in various economy sectors, from virtual assets to large industry or small business."
+            }
+        ]
+    },
+    "ourSocial": {
+        "title": "OUR SOCIALS",
+        "content": [
+            {
+                "icon": "/contents/socials/ourSocial/telegram_gradient.svg",
+                "link": "https://t.me/emergencycrypto"
+            },
+            {
+                "icon": "/contents/socials/ourSocial/github_gradient.svg",
+                "link": "https://github.com/CryptoEmergency"
+            },
+            {
+                "icon": "/contents/socials/ourSocial/twitter_gradient.svg",
+                "link": "https://twitter.com/cryptoemergency"
+            }
+        ]
+    },
+    "aboutProduct": {
+        "title": "OUR PRODUCT HIGHLIGHTS",
+        "content": [
+            {
+                "title": "Quality",
+                "text": "We are committed to delivering our services with the highest technological standard. Our platform and Blockchain CEM are an indicator of our team's first-class expertise."
+            },
+            {
+                "title": "Interaction",
+                "text": "Interaction with future clients and partners in any language and at any level. Our clients play a big role in the project, and we try to make their experience with us, as favorable as possible."
+            },
+            {
+                "title": "Economy",
+                "text": "For future startup projects, our platform is one of the most convenient ways to create your products and has the lowest prices on commissions. We have developed a business model so that it is profitable both for the partner and for the average user."
+            }
+        ]
+    },
+    "contacts": {
+        "title": "CONTACT US",
+        "content": [
+            {
+                "link": "https://t.me/emergencycrypto",
+                "icon": "/contents/contacts/telegram_white.svg",
+                "info": "t.me/cryptoemergencyblockchainEN"
+            },
+            {
+                "link": "https://t.me/cryptoemergencychat",
+                "icon": "/contents/contacts/telegram_white.svg",
+                "info": "t.me/cryptoemergencyblockchainRU"
+            },
+            {
+                "link": "mailto:global@cryptoemergency.com",
+                "icon": "/contents/contacts/email_white.svg",
+                "info": "global@cryptoemergency.com"
+            }
+        ]
+    }
+}

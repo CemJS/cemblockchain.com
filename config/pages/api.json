@@ -1,0 +1,8 @@
+{
+    "url": "/api/",
+    "front": [
+        "header",
+        "apiPage",
+        "footer"
+    ]
+}

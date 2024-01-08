@@ -1,0 +1,71 @@
+.add_network {
+    padding-top: 1.875rem;
+    padding-bottom: 1.875rem;
+
+    
+    &_title {
+        display: flex;
+
+        @media (max-width: 900px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 1.25rem;
+            padding: 0;
+            text-align: center;
+        }
+    }
+
+    h1 {
+        margin-top: 0;
+        padding-right: 2.188rem;
+        max-width: 100%;
+        margin-bottom: 1.25rem;
+        font-size: clamp(1.8rem, 3.5vw, 4rem)
+    }
+
+    img {
+        margin: 0.625rem 0;
+        border-radius: 0.625rem;
+        max-width: 100%;
+        padding-right: 1rem;
+    }
+
+    p {
+        font-size: clamp(1rem, 3.5vw, 1.25rem);
+        font-weight: 500;
+        margin-bottom: 0.625remrem;
+    }
+
+    @media (max-width: 450px) {
+        h1 {
+            padding: 0;
+        }
+    }
+}
+
+.button_fox {
+    background-color: #4A4A4A;
+    color: #FFFFFF;
+    padding: 0rem 1.25rem;
+    border-radius: 0.313rem;
+    margin-top: 0.938rem;
+    cursor: pointer;
+    transition: 1s;
+    font-weight: 800;
+    text-align: center;
+    min-width: 14.625rem;
+    max-width: 16.625rem;
+    text-transform: uppercase;
+    height: 100%;
+
+    &:hover {
+        background-color: #FFFFFF;
+        color: #4A4A4A;
+    }
+    
+    @media (max-width: 900px) {
+        margin-top: 0;
+    }
+}

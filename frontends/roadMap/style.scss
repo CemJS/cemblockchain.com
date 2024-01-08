@@ -1,0 +1,43 @@
+
+.main_block {
+    background: url("images/background/advantages_block_lines.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    height: 100%;
+}
+
+.roadmap {
+    padding-bottom: 0.938rem;
+
+    &_marginB {
+        margin-bottom: 0.625rem;
+    }
+
+    h1 {
+        max-width: 100%;
+        text-align: center;
+        margin-bottom: 1.25rem;
+    }
+
+    h3 {
+        font-size: clamp(1.2rem, 3.5vw, 1.75rem);
+        margin-top: 0;
+        margin-bottom: 0.5rem;
+        font-weight: 500;
+        line-height: 1.2;
+    }
+}
+
+h1 {
+    font-weight: 800;
+    font-size: clamp(1.8rem, 3.5vw, 4rem);
+    max-width: 653px;
+    line-height: 100.02%;
+}
+
+@media (max-width: 900px) {
+    .first_block {
+        background-size: cover;
+    }
+}
