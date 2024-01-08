@@ -1,44 +1,158 @@
 import { Cemjsx, Static, Fn, front } from "cemjs-all"
 import blockHomeContent from '@json/home/blockHomeContent'
 import blockHomeContentEN from '@json/home/en/blockHomeContentEN'
+import * as THREE from "three";
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
-import GLTFLoader from 'three-gltf-loader'
 
 const tmp = function () {
+  let el_3d = document.getElementsByClassName('3d_coin')[0]
+  const scene = new THREE.Scene();
+  const camera = new THREE.PerspectiveCamera(25, 400 / 300, 0.1, 1000);
+  const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
 
-  return
-  console.log(document.getElementsByClassName('3d_coin'))
-  const scene = new window.THREE.Scene();
-  const camera = new window.THREE.PerspectiveCamera(25, 400 / 300, 0.1, 1000);
-  const renderer = new window.THREE.WebGLRenderer({ alpha: true, antialias: true });
+
   var stopAnimate = false
   var timestop
   var noAnimate = false
   var previousCord
   renderer.setSize(400, 300);
-  document.getElementsByClassName('3d_coin')[0].appendChild(renderer.domElement)
+  el_3d.appendChild(renderer.domElement)
 
 
 
-  const aLight = new window.THREE.AmbientLight(0xffffff, 6.2)
+  const aLight = new THREE.AmbientLight(0xffffff, 6.2)
   scene.add(aLight)
-  const pLight = new window.THREE.PointLight(0xffffff, 1.1)
+  const pLight = new THREE.PointLight(0xffffff, 1.1)
   pLight.position.set(0, -3, 7)
   scene.add(pLight)
 
   let loader = new GLTFLoader();
   var obj
-  loader.load('/assets/3d/coin.gltf', function (gltf) {
+  loader.load('/contents/3d/coin.gltf', function (gltf) {
     obj = gltf
     obj.scene.scale.set(1.3, 1.3, 1.3)
     scene.add(obj.scene)
     renderer.render(scene, camera);
-    // animate()
+    animate()
     timestop = setTimeout(function () {
       stopAnimate = true
     }, 16000)
   })
 
+  function animate() {
+    if (!stopAnimate) {
+      requestAnimationFrame(animate);
+    }
+    if (obj == null) {
+      return
+    }
+    if (noAnimate) {
+      return
+    }
+    obj.scene.rotation.y -= 0.01;
+
+    renderer.render(scene, camera);
+  };
+
+  function animateMove(coord) {
+    if (typeof obj == 'undefined') {
+      return
+    }
+    obj.scene.rotation.y += coord;
+
+    renderer.render(scene, camera);
+  };
+
+  camera.position.z = 6;
+}
+
+const tmp2 = function () {
+
+  const renderer = new THREE.WebGLRenderer({ antialias: true });
+  renderer.outputColorSpace = THREE.SRGBColorSpace;
+
+  renderer.setSize(window.innerWidth, window.innerHeight);
+
+  let el_3d = document.getElementsByClassName('3d_coin')[0]
+  el_3d.appendChild(renderer.domElement);
+
+  const scene = new THREE.Scene();
+
+  const camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 1, 1000);
+  camera.position.set(0, 0, 5);
+
+  const controls = new OrbitControls(camera, renderer.domElement);
+  // controls.enableDamping = true;
+  // controls.enablePan = false;
+  controls.minDistance = 5;
+  controls.maxDistance = 5;
+  controls.minPolarAngle = 1.5;
+  controls.maxPolarAngle = 1.5;
+  controls.autoRotate = false;
+  controls.update();
+
+
+  const spotLight = new THREE.SpotLight(0xffffff, 3, 100, 0.22, 1);
+  spotLight.position.set(0, 25, 0);
+  spotLight.castShadow = true;
+  spotLight.shadow.bias = -0.0001;
+  scene.add(spotLight);
+
+  const loader = new GLTFLoader().setPath('contents/3d/');
+  loader.load('coin.gltf', (gltf) => {
+    console.log('=51d912=', 123)
+    const mesh = gltf.scene;
+
+    mesh.position.set(0, 0, 0);
+    scene.add(mesh);
+    let rotationAngle = 0;
+    let rotationSpeed = -0.005;
+    function animate() {
+      console.log('=13587b=', 5555)
+      requestAnimationFrame(animate);
+      controls.update();
+      mesh.rotation.y += rotationSpeed;
+      rotationAngle = (rotationAngle + rotationSpeed) % 360;
+      renderer.render(scene, camera);
+    }
+    animate();
+
+  }, (xhr) => {
+    // console.log('=112346=', 321)
+  },);
+
+  // return
+  // const camera = new window.THREE.PerspectiveCamera(25, 400 / 300, 0.1, 1000);
+  // const renderer = new window.THREE.WebGLRenderer({ alpha: true, antialias: true });
+  // var stopAnimate = false
+  // var timestop
+  // var noAnimate = false
+  // var previousCord
+  // renderer.setSize(400, 300);
+  // document.getElementsByClassName('3d_coin')[0].appendChild(renderer.domElement)
+
+
+
+  // const aLight = new window.THREE.AmbientLight(0xffffff, 6.2)
+  // scene.add(aLight)
+  // const pLight = new window.THREE.PointLight(0xffffff, 1.1)
+  // pLight.position.set(0, -3, 7)
+  // scene.add(pLight)
+
+  // let loader = new GLTFLoader();
+  // var obj
+  // loader.load('/assets/3d/coin.gltf', function (gltf) {
+  //   obj = gltf
+  //   obj.scene.scale.set(1.3, 1.3, 1.3)
+  //   scene.add(obj.scene)
+  //   renderer.render(scene, camera);
+  //   // animate()
+  //   timestop = setTimeout(function () {
+  //     stopAnimate = true
+  //   }, 16000)
+  // })
+  //====================================
   //   const renderer = new window.THREE.WebGLRenderer({ antialias: true });
   //   renderer.outputColorSpace = window.THREE.SRGBColorSpace;
   //   renderer.setSize(window.innerWidth, window.innerHeight);
