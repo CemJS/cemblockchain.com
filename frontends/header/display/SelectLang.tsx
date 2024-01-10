@@ -1,4 +1,4 @@
-import { Cemjsx, Func, front, Static, Fn } from "cemjs-all"
+import { Cemjsx, front, Static, Fn } from "cemjs-all"
 
 export default function () {
 

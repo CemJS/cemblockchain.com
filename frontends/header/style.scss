@@ -1,14 +1,15 @@
+// .closeModal {
+//     transition: 2s;
 
-.closeModal {
-    display: none;
-}
-
+//     opacity: 0;
+//     // left: 100%;
+// }
 /*          header   */
 
 header {
     background: #313131;
     color: #FFFFFF;
-
+    z-index: 101;
     // &_menu {
     //     display: flex;
     // }
@@ -100,7 +101,7 @@ header .block_wrapper {
 
     span {
         font-weight: 600;
-        font-size: 1rem;
+        font-size: 1.35rem;
         cursor: pointer;
     }
 }
@@ -134,9 +135,40 @@ header .block_wrapper {
     overflow-x: hidden;
     overflow-y: auto;
     outline: 0;
-    background-color: rgba(128, 128, 128, 0.408);
-    animation: show-in 0.3s ease-in-out;
+    background-color: #91919131;
+    transition: left 0.5s ease;
+    // animation: show-in 0.3s ease-in-out;
     color: #151515;
+
+    &_header {
+        display: flex;
+        flex-shrink: 0;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 1rem;
+        border-bottom: 0.063rem solid #dee2e6;
+        border-top-left-radius: calc(0.3rem - 0.063rem);
+        border-top-right-radius: calc(0.3rem - 0.063rem);
+    }
+
+    &_title {
+        margin-bottom: 0;
+        margin-top: 0;
+        line-height: 1.5;
+        font-size: 1.25rem
+    }
+
+    &_body {
+        position: relative;
+        flex: 1 1 auto;
+        padding: 1rem;
+    }
+
+    &_close {
+        left: -100%;
+        //    top: -100%;
+        //    opacity: 0;
+    }
 
     @keyframes show-in {
         from {
@@ -147,39 +179,41 @@ header .block_wrapper {
             opacity: 1;
         }
     }
-}
 
-.modal_dialog {
-    height: 100%;
-    position: relative;
-    width: auto;
-    margin: 0.5rem;
-    pointer-events: none;
-    animation: slide-in 0.3s ease-in-out;
+    &_dialog {
+        height: 100%;
+        position: relative;
+        width: auto;
+        margin: 0.5rem;
+        pointer-events: none;
+        // animation: slide-in 0.3s ease-in-out;
 
-    @keyframes slide-in {
-        from {
-            left: -100%;
-        }
+        // @keyframes slide-in {
+        //     from {
+        //         left: -100%;
+        //     }
 
-        to {
-            left: 0;
-        }
+        //     to {
+        //         left: 0;
+        //     }
+        // }
+    }
+
+    &_content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        pointer-events: auto;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 0.063rem solid rgba(0, 0, 0, .2);
+        border-radius: 0.3rem;
+        outline: 0;
     }
 }
 
-.modal_content {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    pointer-events: auto;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 0.063rem solid rgba(0, 0, 0, .2);
-    border-radius: 0.3rem;
-    outline: 0;
-}
+
 
 /*            burger menu          */
 
@@ -211,11 +245,12 @@ header .block_wrapper {
     a {
         font-style: normal;
         font-weight: 400;
-        font-size: 1rem;
+        font-size: 1.1rem;
         cursor: pointer;
         text-decoration: none;
+        max-width: 165px;
         color: inherit;
-        margin-bottom: 0.25rem;
+        margin-bottom: 0.3rem;
     }
 }
 
@@ -259,23 +294,6 @@ header .block_wrapper {
 
 /*                modal            */
 
-.modal_header {
-    display: flex;
-    flex-shrink: 0;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem 1rem;
-    border-bottom: 0.063rem solid #dee2e6;
-    border-top-left-radius: calc(0.3rem - 0.063rem);
-    border-top-right-radius: calc(0.3rem - 0.063rem);
-}
-
-.modal_title {
-    margin-bottom: 0;
-    margin-top: 0;
-    line-height: 1.5;
-    font-size: 1.25rem
-}
 
 .btn_close {
     box-sizing: content-box;
@@ -290,11 +308,6 @@ header .block_wrapper {
     opacity: .5;
 }
 
-.modal_body {
-    position: relative;
-    flex: 1 1 auto;
-    padding: 1rem;
-}
 
 @media(max-width: 900px) {
     .navigation_menu {

@@ -2,7 +2,7 @@
     padding-top: 1.875rem;
     padding-bottom: 1.875rem;
 
-    
+
     &_title {
         display: flex;
 
@@ -29,7 +29,7 @@
         margin: 0.625rem 0;
         border-radius: 0.625rem;
         max-width: 100%;
-        padding-right: 1rem;
+        // padding-right: 1rem;
     }
 
     p {
@@ -43,6 +43,12 @@
             padding: 0;
         }
     }
+}
+
+.blockImg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .button_fox {
@@ -64,8 +70,18 @@
         background-color: #FFFFFF;
         color: #4A4A4A;
     }
-    
+
     @media (max-width: 900px) {
         margin-top: 0;
+    }
+}
+
+
+@media (max-width: 900px) {
+    .add_network {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }

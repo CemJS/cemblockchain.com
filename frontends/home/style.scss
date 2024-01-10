@@ -6,7 +6,7 @@
 
     h1 {
         font-weight: 800;
-        font-size: clamp(1.8rem, 3.5vw, 4rem);
+        font-size: clamp(2rem, 3.5vw, 4rem);
         max-width: 40.813rem;
         line-height: 100.02%;
     }
@@ -21,11 +21,14 @@
 
     p {
         font-weight: 500;
-        font-size: 1.625rem;
-        font-size: clamp(1.2rem, 3.5vw, 1.625rem);
+        font-size: clamp(1.4rem, 3.5vw, 1.625rem);
         line-height: 2.188rem;
         max-width: 57.625rem;
         margin-bottom: 2.5rem;
+
+        @media (max-width: 1100px) {
+            text-align: center;
+        }
     }
 }
 
@@ -166,11 +169,11 @@
     background-size: contain;
     padding-top: 1.875rem;
     overflow: hidden;
-    
+
     @media (max-width: 1350px) {
         background-size: cover;
     }
-    
+
 }
 
 .key_pillars {
@@ -197,13 +200,13 @@
 
         p {
             font-weight: 750;
-            font-size: clamp(1rem, 3.5vw, 1.25rem);
+            font-size: clamp(1.25rem, 3.5vw, 1.35rem);
             margin-bottom: 0.625;
         }
 
         span {
             font-weight: 400;
-            font-size: clamp(1rem, 3.5vw, 1.25rem);
+            font-size: clamp(1.2rem, 3.5vw, 1.3rem);
         }
 
         &:nth-child(2) {
@@ -222,9 +225,11 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+
             &:nth-child(2) {
                 max-width: 53.75rem;
             }
+
             span {
                 text-align: center;
             }
@@ -284,6 +289,10 @@
     }
 }
 
+.coin {
+    margin-top: 20px;
+}
+
 .background_plus {
     position: absolute;
     right: -10rem;
@@ -295,6 +304,19 @@
     }
 }
 
+@media (max-width: 1100px) {
+    .preview_block_main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .coin {
+        margin-top: 0px;
+        margin-bottom: 20px
+    }
+}
 
 @media (max-width: 900px) {
     .advantages_block {

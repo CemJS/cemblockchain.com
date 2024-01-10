@@ -1,4 +1,4 @@
-import { Cemjsx, front, Fn, Static } from "cemjs-all"
+import { Cemjsx, front } from "cemjs-all"
 import logo from '@images/logo/logo.svg'
 import ruflag from '@images/logo/ruflag.svg'
 import enflag from '@images/logo/enflag.svg'
@@ -19,10 +19,13 @@ export default function () {
       <div class="footer_top">
         <div class="footer_connect">
           <img class="imgLogo" src={logo} />
-          <div>
+          {/* <a
+            class="btnFooterAddNet"
+            href="/add-network/"
+            onclick={Fn.link}>
             <img src={metamask} />
             {front.Variable.stateLang == "ru" ? " Добавить сеть " : "Add Network"}
-          </div>
+          </a> */}
         </div>
         <div class="footer_navigation">
           <BlockNavigation />

@@ -1,4 +1,4 @@
-import { Cemjsx, Func, Static, Fn, front } from "cemjs-all"
+import { Cemjsx, front } from "cemjs-all"
 import roadMap from "@json/roadMap/roadMap"
 import roadMapEN from "@json/roadMap/en//roadMapEN"
 
@@ -62,7 +62,6 @@ export default function () {
             </div>
           )
         })}
-
       </div>
     </div>
   )

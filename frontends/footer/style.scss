@@ -40,7 +40,7 @@
     align-items: center;
 
     span {
-        font-weight: 400;
+        font-weight: 500;
         font-size: 0.875rem;
     }
 }
@@ -58,10 +58,10 @@
         color: inherit;
         margin-bottom: 0.25rem;
         display: block;
-
         &:hover {
             text-decoration: underline;
         }
+        
     }
 
     .footer_p {
@@ -78,14 +78,24 @@
         }
     }
 }
-
+.a_servNoWrap {
+    text-wrap: nowrap;
+}
 
 /*******************************************************/
 .blockNavigation {
     display: flex;
     cursor: pointer;
 
-    @media(max-width: 780px) {
+    p {
+        font-weight: 700;
+    }
+
+    .img_down_app {
+        height: 2.5rem;
+    }
+
+    @media(max-width: 1100px) {
         display: block;
 
         &_content {
@@ -186,7 +196,7 @@
     }
 }
 
-@media(max-width: 900px) {
+@media(max-width: 1100px) {
     .footer_top {
         flex-wrap: wrap;
         justify-content: center;
@@ -210,13 +220,17 @@
 }
 
 
-@media(max-width: 780px) {
+@media(max-width: 1100px) {
 
     .mobileFlex {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        p {
+            font-weight: 700;
+        }
     }
 
     .showIcon {

@@ -37,11 +37,11 @@ export default function () {
             if (item?.info === 'Lite Paper' || 'Github') {
               return (
                 <a class="footer_navigation_a" href={item?.link} target="_blank">{item?.info}</a>
-              );
+              )
             } else {
               return (
                 <a class="footer_navigation_a" href={item?.link}>{item?.info}</a>
-              );
+              )
             }
           })}
         </div>

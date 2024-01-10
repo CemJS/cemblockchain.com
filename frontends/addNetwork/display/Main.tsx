@@ -1,4 +1,4 @@
-import { Cemjsx, Func, Static, Fn, front } from "cemjs-all"
+import { Cemjsx, front } from "cemjs-all"
 import addNetwork from "@json/addNetwork/addNetwork"
 import addNetworkEN from "@json/addNetwork/en/addNetworkEN"
 import metamask from '@svg/metamask.svg'
@@ -15,7 +15,7 @@ export default function () {
           {lang?.title}
         </h1>
         <div class="button_fox">
-          <img src={metamask} />
+          <img src={metamask} style="margin-right: 1rem" />
           {lang?.textButton}
         </div>
       </div>
@@ -27,7 +27,7 @@ export default function () {
       </p>
       {lang?.content?.map((item: any) => {
         return (
-          <div>
+          <div class="blockImg">
             {item?.image ? <img src={item?.image} /> : null}
             <p>{item?.text}</p>
             {item?.p1 ?
@@ -43,8 +43,7 @@ export default function () {
               : null}
           </div>
         )
-      })
-      }
+      })}
     </div>
   )
 }

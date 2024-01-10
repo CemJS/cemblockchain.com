@@ -8,8 +8,8 @@ export const loader = async function (Variable: any) {
     }
 }
 
-export const progress = async function () {
-    if (preloader) {
+export const progress = async function ({ load, total }) {
+    if (preloader && total == load) {
         preloader.style.display = "none"
     }
 }

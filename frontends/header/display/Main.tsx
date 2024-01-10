@@ -1,4 +1,4 @@
-import { Cemjsx, Func, Static, Fn, front } from "cemjs-all"
+import { Cemjsx, Fn, front } from "cemjs-all"
 import logo from '@images/logo/logo.svg'
 import burger_menu from '@images/logo/burger_menu.svg'
 import BlockService from "./BlockService";
@@ -21,6 +21,7 @@ export default function () {
           src={burger_menu}
           onclick={() => {
             front.Variable.stateModal = true
+            this.Variable.$el.body.style.overflow = 'hidden'
             Fn.initAll()
           }} />
         <div class="navigation_menu">

@@ -1,4 +1,4 @@
-import { Cemjsx, front, Func, Static, Fn } from "cemjs-all"
+import { Cemjsx, front, Static } from "cemjs-all"
 import blockHeaderNavigation from "@json/header/blockHeaderNavigation"
 import blockHeaderNavigationEN from "@json/header/en/blockHeaderNavigationEN"
 

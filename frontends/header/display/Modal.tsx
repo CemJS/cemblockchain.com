@@ -1,4 +1,4 @@
-import { Cemjsx, Static, Fn, front } from "cemjs-all"
+import { Cemjsx, Fn, front } from "cemjs-all"
 import socialsIconEN from '@json/footer/socialsIconEN'
 import language_icon from '@svg/language_icon.svg'
 import blockHeaderNavigation from "@json/header/blockHeaderNavigation"
@@ -12,9 +12,10 @@ export default function () {
     <div
       onclick={() => {
         front.Variable.stateModal = false
+        this.Variable.$el.body.style.overflow = 'auto'
         Fn.initAll()
       }}
-      class={!front.Variable.stateModal ? "closeModal" : "modal"} id="burgerMenu">
+      class={!front.Variable.stateModal ? "modal modal_close" : "modal"} id="burgerMenu">
       <div class="modal_dialog">
         <div class="modal_content">
           <div class="modal_header">
@@ -60,7 +61,7 @@ export default function () {
                 {lang?.about?.content?.map((item: any) => {
                   return (
                     <a href={item?.link}
-                      target="_blank">
+                      onclick={Fn.link}>
                       {item?.info}
                     </a>
                   )

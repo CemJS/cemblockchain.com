@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>CryptoEmergency Blockchain</title>
+    <title>CEM Wallet</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="/assets/css/preloader.css">
     <link rel="stylesheet" href="/assets/css/root.css">
@@ -14,6 +14,7 @@
 <body>
     <div id="app">
     </div>
+    </div>
     <div id="preloader" class="preloader_wrap">
         <div class="preloader">
             <div class="page_loader">
@@ -22,12 +23,13 @@
                     <p>Connecting to Blockchain...</p>
                 </div>
             </div>
-            <div class="preloader_percent" ref="percent">
+            <div class="preloader_progressBar">
+                <div id="progress" class="preloader_progress"></div>
+                <div class="preloader_percent" ref="percent"> </div>
             </div>
         </div>
     </div>
 </body>
-
 <script>
     import("/assets/js/root.js").then(start => start.default())
 </script>

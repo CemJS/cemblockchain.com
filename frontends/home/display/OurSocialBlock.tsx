@@ -1,4 +1,4 @@
-import { Cemjsx, Static, Fn, front } from "cemjs-all"
+import { Cemjsx, front } from "cemjs-all"
 import blockHomeContent from '@json/home/blockHomeContent'
 import blockHomeContentEN from '@json/home/en/blockHomeContentEN'
 

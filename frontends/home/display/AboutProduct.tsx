@@ -1,4 +1,4 @@
-import { Cemjsx, front, Static } from "cemjs-all"
+import { Cemjsx, front } from "cemjs-all"
 import plus from '@images/plus/plus.svg'
 import blockHomeContent from '@json/home/blockHomeContent'
 import blockHomeContentEN from '@json/home/en/blockHomeContentEN'
@@ -6,7 +6,6 @@ import blockHomeContentEN from '@json/home/en/blockHomeContentEN'
 export default function () {
 
   const lang = front.Variable.stateLang === "ru" ? blockHomeContent : blockHomeContentEN
-console.log("front.Variable.stateLang", front.Variable.stateLang);
 
   return (
     <div class="about_product">

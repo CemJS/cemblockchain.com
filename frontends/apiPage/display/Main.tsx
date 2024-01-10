@@ -1,4 +1,4 @@
-import { Cemjsx, Func, Static, Fn, front } from "cemjs-all"
+import { Cemjsx, front } from "cemjs-all"
 import apiInfo from "@json/apiInfo/apiInfo"
 
 export default function () {
@@ -10,7 +10,6 @@ export default function () {
       <h2>{lang?.title}</h2>
       {lang?.content?.map((item: any, index: number) => {
         const blockId = `response_${index}`
-        console.log("item", item, index, blockId)
 
         return (
           <div key={blockId}>
