@@ -11,15 +11,12 @@ const tmp = function () {
   const camera = new THREE.PerspectiveCamera(25, 400 / 300, 0.1, 1000);
   const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
 
-
   var stopAnimate = false
   var timestop
   var noAnimate = false
   // var previousCord
   renderer.setSize(375, 290);
   el_3d.appendChild(renderer.domElement)
-
-
 
   const aLight = new THREE.AmbientLight(0xffffff, 2)
   scene.add(aLight)
@@ -34,12 +31,10 @@ const tmp = function () {
     scene.add(obj.scene)
     renderer.render(scene, camera);
     animate()
-    timestop = setTimeout(function () {
-      stopAnimate = true
-    }, 8000)
   })
 
   function animate() {
+    obj.scene.rotation.y -= 0.006;
     if (!stopAnimate) {
       requestAnimationFrame(animate);
     }
@@ -49,21 +44,23 @@ const tmp = function () {
     if (noAnimate) {
       return
     }
-    obj.scene.rotation.y -= 0.008;
-
     renderer.render(scene, camera);
-  };
-
-  // function animateMove(coord) {
-  //   if (typeof obj == 'undefined') {
-  //     return
-  //   }
-  //   obj.scene.rotation.y += coord;
-
-  //   renderer.render(scene, camera);
-  // };
+  }
 
   camera.position.z = 6;
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry?.isIntersecting == true) {
+        stopAnimate = false
+        animate()
+      } else {
+        stopAnimate = true
+      }
+    })
+  })
+
+  observer.observe(el_3d)
 }
 
 export default function () {
@@ -74,10 +71,8 @@ export default function () {
     <div init={tmp} class="advantages_block" ref="home">
       <div class="preview_block block_wrapper">
         <div class="preview_block_main">
-
           <h1>{front.Variable.stateLang == "ru" ? Static?.text : Static?.textEn}</h1>
           <div class="coin 3d_coin"></div>
-
         </div>
         <p>
           <b>Crypto Emergency </b>

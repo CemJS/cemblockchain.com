@@ -12,6 +12,7 @@ front.func.test = () => {
 }
 
 front.loader = () => {
+    front.Variable.stopAnimate = false
     Static.text = "БЛОКЧЕЙН CEM – ПЛАТФОРМА ДЛЯ ПРОЕКТОВ И ПРИЛОЖЕНИЙ.";
     Static.textEn = "BLOCKCHAIN CEM - A PLATFORM FOR PROJECTS AND APPLICATIONS.";
     return
