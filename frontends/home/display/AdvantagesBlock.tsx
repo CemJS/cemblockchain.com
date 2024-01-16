@@ -11,7 +11,7 @@ const tmp = function () {
   const camera = new THREE.PerspectiveCamera(25, 400 / 300, 0.1, 1000);
   const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
 
-  var stopAnimate = false
+  var stopAnimate = true
   var timestop
   var noAnimate = false
   // var previousCord
@@ -30,7 +30,7 @@ const tmp = function () {
     obj.scene.scale.set(1.3, 1.3, 1.3)
     scene.add(obj.scene)
     renderer.render(scene, camera);
-    animate()
+    // animate()
   })
 
   function animate() {
@@ -49,18 +49,18 @@ const tmp = function () {
 
   camera.position.z = 6;
 
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry?.isIntersecting == true) {
-        stopAnimate = false
-        animate()
-      } else {
-        stopAnimate = true
-      }
-    })
-  })
+  // const observer = new IntersectionObserver((entries) => {
+  //   entries.forEach(entry => {
+  //     if (entry?.isIntersecting == true) {
+  //       stopAnimate = false
+  //       animate()
+  //     } else {
+  //       stopAnimate = true
+  //     }
+  //   })
+  // })
 
-  observer.observe(el_3d)
+  // observer.observe(el_3d)
 }
 
 export default function () {
