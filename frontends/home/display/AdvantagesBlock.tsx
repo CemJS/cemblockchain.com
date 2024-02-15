@@ -29,8 +29,8 @@ const tmp = function () {
     obj = gltf
     obj.scene.scale.set(1.3, 1.3, 1.3)
     scene.add(obj.scene)
-    renderer.render(scene, camera);
-    // animate()
+    renderer.render(scene, camera); 
+    // animate() 
   })
 
   function animate() {
